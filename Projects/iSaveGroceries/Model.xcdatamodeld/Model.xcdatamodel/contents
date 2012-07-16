@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11D50b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="GroceryStore" representedClassName="GroceryStore" syncable="YES">
+        <attribute name="favoriteStore" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="groceryStoreName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="numberOfSaleItems" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="storeToLocation" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="locationToStore" inverseEntity="Location" syncable="YES"/>
+        <relationship name="storeToSaleItem" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SaleItem" inverseName="saleItemToStore" inverseEntity="SaleItem" syncable="YES"/>
+    </entity>
+    <entity name="ItemBaseEntity" representedClassName="ItemBaseEntity" isAbstract="YES" syncable="YES">
+        <attribute name="createdDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="communityID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="communityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countyID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favoriteLocation" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="stateID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locationToStore" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="GroceryStore" inverseName="storeToLocation" inverseEntity="GroceryStore" syncable="YES"/>
+    </entity>
+    <entity name="PurchaseHIstory" representedClassName="PurchaseHIstory" parentEntity="ItemBaseEntity" syncable="YES">
+        <attribute name="quantitiy" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="salePrice" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="saleHistoryToSaleItem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SaleItem" inverseName="saleItemToSaleHistory" inverseEntity="SaleItem" syncable="YES"/>
+    </entity>
+    <entity name="SaleItem" representedClassName="SaleItem" parentEntity="ItemBaseEntity" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regularPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="saleEndDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="salePrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="saleItemToSaleHistory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PurchaseHIstory" inverseName="saleHistoryToSaleItem" inverseEntity="PurchaseHIstory" syncable="YES"/>
+        <relationship name="saleItemToShoppingList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ShoppingList" inverseName="shoppingListToSaleItem" inverseEntity="ShoppingList" syncable="YES"/>
+        <relationship name="saleItemToStore" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GroceryStore" inverseName="storeToSaleItem" inverseEntity="GroceryStore" syncable="YES"/>
+    </entity>
+    <entity name="ShoppingList" representedClassName="ShoppingList" parentEntity="ItemBaseEntity" syncable="YES">
+        <relationship name="shoppingListToSaleItem" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="SaleItem" inverseName="saleItemToShoppingList" inverseEntity="SaleItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GroceryStore" positionX="273157" positionY="353745" width="128" height="135"/>
+        <element name="ItemBaseEntity" positionX="273645" positionY="353358" width="128" height="75"/>
+        <element name="Location" positionX="272943" positionY="353682" width="128" height="210"/>
+        <element name="PurchaseHIstory" positionX="273373" positionY="353745" width="128" height="105"/>
+        <element name="SaleItem" positionX="273661" positionY="354186" width="128" height="210"/>
+        <element name="ShoppingList" positionX="274149" positionY="353628" width="128" height="60"/>
+    </elements>
+</model>
