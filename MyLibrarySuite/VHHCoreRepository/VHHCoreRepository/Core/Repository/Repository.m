@@ -60,12 +60,21 @@
 }
 
 - (RepositoryOperationStatus)resetBackingStore{
-    [NSException raise:@"Must Override" format:nil];
-    return RepositoryOperationStatusFeatureNotImplemented;
+    if ([self.backingstore resetBackingstore]) {
+        [self.backingstore managedObjectContext];
+        self.isRepositoryOpen = YES;
+        return RepositoryOperationStatusSuccess;
+    }
+    
+    return RepositoryOperationStatusUnsecuredRemoveFail;
 }
 - (RepositoryOperationStatus)deleteBackingStore{
-    [NSException raise:@"Must Override" format:nil];
-    return RepositoryOperationStatusFeatureNotImplemented;
+    if ([self.backingstore DeleteBackingStore]) {
+        self.isRepositoryOpen = NO;
+        return RepositoryOperationStatusSuccess;
+        
+    }
+    return RepositoryOperationStatusUnsecuredRemoveFail;
 }
 
 #pragma mark - Repository Data Access Methods

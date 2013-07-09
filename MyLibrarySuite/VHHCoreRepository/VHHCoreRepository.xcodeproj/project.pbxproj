@@ -23,14 +23,10 @@
 		F3733D91178358870006B756 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D8F178358870006B756 /* Repository.m */; };
 		F3733D9417835C6E0006B756 /* DataEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9317835C6E0006B756 /* DataEncryption.m */; };
 		F3733D9517835C6E0006B756 /* DataEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9317835C6E0006B756 /* DataEncryption.m */; };
-		F3733D9817835CF70006B756 /* FileLevelSecurityRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9717835CF70006B756 /* FileLevelSecurityRepository.m */; };
-		F3733D9917835CF70006B756 /* FileLevelSecurityRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9717835CF70006B756 /* FileLevelSecurityRepository.m */; };
 		F3733D9C17835D0E0006B756 /* FieldLevelSecurityRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9B17835D0E0006B756 /* FieldLevelSecurityRepository.m */; };
 		F3733D9D17835D0E0006B756 /* FieldLevelSecurityRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9B17835D0E0006B756 /* FieldLevelSecurityRepository.m */; };
 		F3733DA017835D2D0006B756 /* UnsecuredRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9F17835D2D0006B756 /* UnsecuredRepository.m */; };
 		F3733DA117835D2D0006B756 /* UnsecuredRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733D9F17835D2D0006B756 /* UnsecuredRepository.m */; };
-		F3733DA4178365EC0006B756 /* FileLevelSecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733DA3178365EC0006B756 /* FileLevelSecurityStrategy.m */; };
-		F3733DA5178365EC0006B756 /* FileLevelSecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733DA3178365EC0006B756 /* FileLevelSecurityStrategy.m */; };
 		F3733DA8178366090006B756 /* FieldLevelSecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733DA7178366090006B756 /* FieldLevelSecurityStrategy.m */; };
 		F3733DA9178366090006B756 /* FieldLevelSecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733DA7178366090006B756 /* FieldLevelSecurityStrategy.m */; };
 		F3733DAD17836B0E0006B756 /* RepositoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F3733DAC17836B0E0006B756 /* RepositoryFactory.m */; };
@@ -87,14 +83,10 @@
 		F3733D8F178358870006B756 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
 		F3733D9217835C6E0006B756 /* DataEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEncryption.h; sourceTree = "<group>"; };
 		F3733D9317835C6E0006B756 /* DataEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEncryption.m; sourceTree = "<group>"; };
-		F3733D9617835CF70006B756 /* FileLevelSecurityRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLevelSecurityRepository.h; sourceTree = "<group>"; };
-		F3733D9717835CF70006B756 /* FileLevelSecurityRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileLevelSecurityRepository.m; sourceTree = "<group>"; };
 		F3733D9A17835D0E0006B756 /* FieldLevelSecurityRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldLevelSecurityRepository.h; sourceTree = "<group>"; };
 		F3733D9B17835D0E0006B756 /* FieldLevelSecurityRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldLevelSecurityRepository.m; sourceTree = "<group>"; };
 		F3733D9E17835D2D0006B756 /* UnsecuredRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsecuredRepository.h; sourceTree = "<group>"; };
 		F3733D9F17835D2D0006B756 /* UnsecuredRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsecuredRepository.m; sourceTree = "<group>"; };
-		F3733DA2178365EC0006B756 /* FileLevelSecurityStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLevelSecurityStrategy.h; sourceTree = "<group>"; };
-		F3733DA3178365EC0006B756 /* FileLevelSecurityStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileLevelSecurityStrategy.m; sourceTree = "<group>"; };
 		F3733DA6178366090006B756 /* FieldLevelSecurityStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldLevelSecurityStrategy.h; sourceTree = "<group>"; };
 		F3733DA7178366090006B756 /* FieldLevelSecurityStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldLevelSecurityStrategy.m; sourceTree = "<group>"; };
 		F3733DAB17836B0E0006B756 /* RepositoryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryFactory.h; sourceTree = "<group>"; };
@@ -242,8 +234,6 @@
 		F3733D8117834D390006B756 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				F3733D9617835CF70006B756 /* FileLevelSecurityRepository.h */,
-				F3733D9717835CF70006B756 /* FileLevelSecurityRepository.m */,
 				F3733D9A17835D0E0006B756 /* FieldLevelSecurityRepository.h */,
 				F3733D9B17835D0E0006B756 /* FieldLevelSecurityRepository.m */,
 				F3733D9E17835D2D0006B756 /* UnsecuredRepository.h */,
@@ -277,8 +267,6 @@
 		F3733D8417834D390006B756 /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
-				F3733DA2178365EC0006B756 /* FileLevelSecurityStrategy.h */,
-				F3733DA3178365EC0006B756 /* FileLevelSecurityStrategy.m */,
 				F3733DA6178366090006B756 /* FieldLevelSecurityStrategy.h */,
 				F3733DA7178366090006B756 /* FieldLevelSecurityStrategy.m */,
 			);
@@ -402,12 +390,10 @@
 			files = (
 				F3D9800D178B4CCB0087FF80 /* EncryptionPasswordTracker.m in Sources */,
 				F3733D9417835C6E0006B756 /* DataEncryption.m in Sources */,
-				F3733DA4178365EC0006B756 /* FileLevelSecurityStrategy.m in Sources */,
 				F3733D7B17834C950006B756 /* NSData+VHHCategory.m in Sources */,
 				F3733DA017835D2D0006B756 /* UnsecuredRepository.m in Sources */,
 				F3D9800F178B4CCB0087FF80 /* ObjectEncryptionTransformer.m in Sources */,
 				F3733DA8178366090006B756 /* FieldLevelSecurityStrategy.m in Sources */,
-				F3733D9817835CF70006B756 /* FileLevelSecurityRepository.m in Sources */,
 				F3733D90178358870006B756 /* Repository.m in Sources */,
 				F3733D8A1783505F0006B756 /* SQLiteBackingstore.m in Sources */,
 				F3733DAD17836B0E0006B756 /* RepositoryFactory.m in Sources */,
@@ -420,14 +406,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3733DAE17836B0E0006B756 /* RepositoryFactory.m in Sources */,
-				F3733D9917835CF70006B756 /* FileLevelSecurityRepository.m in Sources */,
 				F3733D9517835C6E0006B756 /* DataEncryption.m in Sources */,
 				F3733DA9178366090006B756 /* FieldLevelSecurityStrategy.m in Sources */,
 				F3733D9D17835D0E0006B756 /* FieldLevelSecurityRepository.m in Sources */,
 				F3733D16178349B40006B756 /* VHHCoreRepositoryTests.m in Sources */,
 				F3733D8B1783505F0006B756 /* SQLiteBackingstore.m in Sources */,
 				F3D9800E178B4CCB0087FF80 /* EncryptionPasswordTracker.m in Sources */,
-				F3733DA5178365EC0006B756 /* FileLevelSecurityStrategy.m in Sources */,
 				F3D98010178B4CCB0087FF80 /* ObjectEncryptionTransformer.m in Sources */,
 				F3733D7C17834C950006B756 /* NSData+VHHCategory.m in Sources */,
 				F3733DA117835D2D0006B756 /* UnsecuredRepository.m in Sources */,
@@ -554,7 +538,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VHHCoreRepository/VHHCoreRepository-Prefix.pch";
@@ -574,7 +558,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VHHCoreRepository/VHHCoreRepository-Prefix.pch";

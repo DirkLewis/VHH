@@ -21,7 +21,7 @@
     return [[self alloc]init];
 }
 
-- (BOOL)isRepositorySecured:(Repository*)repository{
+- (BOOL)isRepositorySecured:(id<RepositoryProtocol>)repository{
     
     return YES;
 }
@@ -32,7 +32,7 @@
     
 }
 
-- (NSDictionary*)findTransformableAttributesInEntitiesInRepository:(Repository*)repository{
+- (NSDictionary*)findTransformableAttributesInEntitiesInRepository:(id<RepositoryProtocol>)repository{
     
     NSMutableArray *transformables = [NSMutableArray array];
     NSArray *repositoryEntities = [[[repository.backingstore managedObjectModel] entities]valueForKey:@"name"];
@@ -57,7 +57,7 @@
     return (NSDictionary*)transformables;
 }
 
-- (RepositoryOperationStatus)applySecurityToRepository:(Repository*)repository{
+- (RepositoryOperationStatus)applySecurityToRepository:(id<RepositoryProtocol>)repository{
     
     for (NSDictionary *entityDict in [self findTransformableAttributesInEntitiesInRepository:repository]) {
         
@@ -83,14 +83,16 @@
     return RepositoryOperationStatusSuccess;
 }
 
-- (RepositoryOperationStatus)reEncryptRepository:(Repository*)repository passwordTracker:(id<PasswordProtocol>)passwordTracker{
+- (RepositoryOperationStatus)reEncryptRepository:(id<RepositoryProtocol>)repository passwordTracker:(id<PasswordProtocol>)passwordTracker{
     
     [self setPasswordTracker:passwordTracker];
     RepositoryOperationStatus status = [self applySecurityToRepository:repository];
-    if (status != RepositoryOperationStatusSuccess) {
+    if (status == RepositoryOperationStatusSuccess) {
         self.passwordTracker.password = self.passwordTracker.passwordNew;
     }
     else {
+        self.passwordTracker.password = self.passwordTracker.passwordOld;
+
     }
     
     [repository save];

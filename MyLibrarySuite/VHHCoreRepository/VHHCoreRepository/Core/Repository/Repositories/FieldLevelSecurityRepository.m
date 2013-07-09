@@ -31,28 +31,9 @@
 }
 
 - (RepositoryOperationStatus)reEncryptRepositoryWithPasswordTracker:(id<PasswordProtocol>)passwordTracker{
-    [self.securityStrategy reEncryptRepository:self passwordTracker:(id<PasswordProtocol>)passwordTracker];
-    return  RepositoryOperationStatusSuccess;
+    
+    return  [self.securityStrategy reEncryptRepository:self passwordTracker:(id<PasswordProtocol>)passwordTracker];
 }
 
-- (RepositoryOperationStatus)resetBackingStore{
-    
-    if ([self.backingstore resetBackingstore]) {
-        [self.backingstore managedObjectContext];
-        self.isRepositoryOpen = YES;
-        return RepositoryOperationStatusSuccess;
-    }
-    
-    return RepositoryOperationStatusUnsecuredRemoveFail;
-}
-- (RepositoryOperationStatus)deleteBackingStore{
-    if ([self.backingstore DeleteBackingStore]) {
-        self.isRepositoryOpen = NO;
-        return RepositoryOperationStatusSuccess;
-        
-    }
-    return RepositoryOperationStatusUnsecuredRemoveFail;
-    
-}
 
 @end

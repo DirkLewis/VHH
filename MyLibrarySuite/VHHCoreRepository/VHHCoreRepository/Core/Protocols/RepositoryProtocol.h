@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Repository;
-
+@protocol RepositoryProtocol;
 typedef enum{
     
     RepositoryOperationStatusSuccess = 0,
@@ -47,15 +46,16 @@ typedef enum {
 @protocol RepositorySecurityStrategyProtocol <NSObject>
 
 @required
-- (BOOL)isRepositorySecured:(Repository*)repository;
+- (BOOL)isRepositorySecured:(id<RepositoryProtocol>)repository;
 - (RepositorySecurityType)repositorySecurityType;
 + (instancetype)securityStrategyInstance;
 
 @optional
-- (RepositoryOperationStatus)resetSecuredRepository:(Repository*)repository;
-- (RepositoryOperationStatus)secureRepository:(Repository*)repository withPassword:(NSString*)password;
-- (RepositoryOperationStatus)unsecureRepository:(Repository*)repository withPassword:(NSString*)password;
-- (RepositoryOperationStatus)reEncryptRepository:(Repository*)repository passwordTracker:(id<PasswordProtocol>)passwordTracker;;
+- (RepositoryOperationStatus)deleteSecuredRepository:(id<RepositoryProtocol>)repository;
+
+- (RepositoryOperationStatus)secureRepository:(id<RepositoryProtocol>)repository withPassword:(NSString*)password;
+- (RepositoryOperationStatus)unsecureRepository:(id<RepositoryProtocol>)repository withPassword:(NSString*)password;
+- (RepositoryOperationStatus)reEncryptRepository:(id<RepositoryProtocol>)repository passwordTracker:(id<PasswordProtocol>)passwordTracker;;
 
 @end
 
@@ -77,7 +77,7 @@ typedef enum {
 
 
 - (id)initWithBackingStore:(id<BackingstoreProtocol>)backingStore securityStrategy:(id<RepositorySecurityStrategyProtocol>)securityStrategy;
-+ (Repository*)repository:(id<BackingstoreProtocol>)backingstore securityStrategy:(id<RepositorySecurityStrategyProtocol>)securityStrategy;
++ (instancetype)repository:(id<BackingstoreProtocol>)backingstore securityStrategy:(id<RepositorySecurityStrategyProtocol>)securityStrategy;
 
 - (id)insertNewEntityNamed:(NSString*)entityName;
 - (NSFetchRequest *)fetchRequestForEntityNamed:(NSString*)entityName batchSize:(NSInteger)batchSize;
@@ -88,9 +88,7 @@ typedef enum {
 - (BOOL)save;
 - (BOOL)saveWithRollbackOnError;
 @optional
-- (RepositoryOperationStatus)resetSecuredRepository;
-- (RepositoryOperationStatus)secureRepositoryWithPassword:(NSString*)password;
-- (RepositoryOperationStatus)unsecureRepositoryWithPassword:(NSString*)password;
+
 - (RepositoryOperationStatus)reEncryptRepositoryWithPasswordTracker:(id<PasswordProtocol>)passwordTracker;
 
 

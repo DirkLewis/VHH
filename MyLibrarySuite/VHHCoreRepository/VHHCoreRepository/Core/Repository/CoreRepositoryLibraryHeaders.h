@@ -2,8 +2,5 @@
 #import "Repository.h"
 #import "FieldLevelSecurityStrategy.h"
 #import "RepositoryProtocol.h"
-#import "FileLevelSecurityRepository.h"
 #import "RepositoryFactory.h"
-#import "FileLevelSecurityRepository.h"
-#import "FileLevelSecurityStrategy.h"
 #import "FieldLevelSecurityStrategy.h"

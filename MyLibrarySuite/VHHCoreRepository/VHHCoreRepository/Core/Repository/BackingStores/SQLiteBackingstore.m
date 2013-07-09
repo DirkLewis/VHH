@@ -113,6 +113,7 @@
 }
 
 #pragma mark - Private Mehtods
+
 - (BOOL)resetPersistentStoreCoordiator:(BOOL)deleteStore{
     
     NSArray *stores = [self.persistentStoreCoordinator persistentStores];
@@ -121,7 +122,10 @@
         [self.persistentStoreCoordinator removePersistentStore:store error:&error];
         
         if (deleteStore) {
-            [[NSFileManager defaultManager] removeItemAtURL:store.URL error:&error];
+            
+            [[NSFileManager defaultManager] removeItemAtPath:[NSString stringWithFormat:@"%@%@",store.URL.path,@"-wal"] error:&error];
+            [[NSFileManager defaultManager] removeItemAtPath:[NSString stringWithFormat:@"%@%@",store.URL.path,@"-shm"] error:&error];
+            [[NSFileManager defaultManager] removeItemAtPath:store.URL.path error:&error];
         }
     }
     

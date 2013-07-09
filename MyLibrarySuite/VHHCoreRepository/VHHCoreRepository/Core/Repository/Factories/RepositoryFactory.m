@@ -9,11 +9,9 @@
 #import "RepositoryFactory.h"
 #import "Repository.h"
 #import "FieldLevelSecurityRepository.h"
-#import "FileLevelSecurityRepository.h"
 #import "BackingstoreProtocol.h"
 #import "SQLiteBackingstore.h"
 #import "FieldLevelSecurityStrategy.h"
-#import "FileLevelSecurityStrategy.h"
 #import "UnsecuredRepository.h"
 
 @implementation RepositoryFactory
@@ -24,9 +22,6 @@
     if ([strategy isKindOfClass:[FieldLevelSecurityStrategy class]]) {
         repository = [[FieldLevelSecurityRepository alloc]initWithBackingStore:bs securityStrategy:strategy];
     }
-    else if([strategy isKindOfClass:[FileLevelSecurityStrategy class]]){
-        repository = [[FileLevelSecurityRepository alloc]initWithBackingStore:bs securityStrategy:strategy];
-    }
     else{
         repository = [[UnsecuredRepository alloc]initWithBackingStore:bs securityStrategy:nil];
     }
@@ -36,11 +31,6 @@
 
 + (id<RepositoryProtocol>)createFieldLevelRepositoryForModel:(NSString*)modelname toFile:(NSString*)filename fromConfiguration:(NSString*)configuration{
     id<RepositorySecurityStrategyProtocol> securityStrategy = [[FieldLevelSecurityStrategy alloc]init];
-    return [RepositoryFactory buildRepositoryForModel:modelname toFile:filename fromConfiguration:configuration withSecurityStrategy:securityStrategy];
-}
-
-+ (id<RepositoryProtocol>)createFileLevelRepositoryForModel:(NSString*)modelname toFile:(NSString*)filename fromConfiguration:(NSString*)configuration{
-    id<RepositorySecurityStrategyProtocol> securityStrategy = [[FileLevelSecurityStrategy alloc]init];
     return [RepositoryFactory buildRepositoryForModel:modelname toFile:filename fromConfiguration:configuration withSecurityStrategy:securityStrategy];
 }
 

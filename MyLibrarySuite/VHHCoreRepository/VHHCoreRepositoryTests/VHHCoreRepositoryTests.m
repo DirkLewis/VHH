@@ -10,12 +10,10 @@
 #import <CoreData/CoreData.h>
 #import "SQLiteBackingstore.h"
 #import "Repository.h"
-#import "FileLevelSecurityRepository.h"
 #import "FieldLevelSecurityRepository.h"
 #import "UnsecuredRepository.h"
 #import "ProtocolHeaders.h"
 #import "FieldLevelSecurityStrategy.h"
-#import "FileLevelSecurityStrategy.h"
 #import "EncryptionPasswordTracker.h"
 
 @interface VHHCoreRepositoryTests : XCTestCase
@@ -104,10 +102,10 @@
     person = nil;
     
     [EncryptionPasswordTracker sharedEncryptionPasswordTracker].passwordNew = @"p2";
-
+    [EncryptionPasswordTracker sharedEncryptionPasswordTracker].passwordOld = @"p1";
+    [EncryptionPasswordTracker sharedEncryptionPasswordTracker].password = @"p1";
     [_repository reEncryptRepositoryWithPasswordTracker:[EncryptionPasswordTracker sharedEncryptionPasswordTracker]];
     [[[_repository backingstore]managedObjectContext]reset];
-
     person = [_repository resultsForRequest:[_repository fetchRequestForEntityNamed:@"Person" batchSize:0]][0];
     NSString *secretData = [person valueForKey:@"secretData"];
     XCTAssertTrue([secretData isEqualToString:@"secretData"], @"should be in the clear.");
@@ -115,6 +113,8 @@
     [_repository closeRepository];
     [_repository deleteBackingStore];
 }
+
+
 
 #pragma mark - Repository Tests
 
