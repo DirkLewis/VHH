@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3215C5015EBC68A0060794B /* FlexibleFRCTableDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3215C4F15EBC68A0060794B /* FlexibleFRCTableDatasource.m */; };
+		F3655DF615F171270029CCC5 /* FlexibleFRCTableDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3215C4E15EBC68A0060794B /* FlexibleFRCTableDatasource.h */; };
+		F3655DF715F171270029CCC5 /* FlexibleFRCTableDatasource.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3215C4F15EBC68A0060794B /* FlexibleFRCTableDatasource.m */; };
+		F3967D1015CEF8CD00F9DD98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967D0F15CEF8CD00F9DD98 /* Foundation.framework */; };
+		F3967DAB15CEFD3F00F9DD98 /* UIColor+ROAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D9315CEFD3F00F9DD98 /* UIColor+ROAdditions.m */; };
+		F3967DAC15CEFD3F00F9DD98 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D9615CEFD3F00F9DD98 /* UIImage+Alpha.m */; };
+		F3967DAD15CEFD3F00F9DD98 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D9815CEFD3F00F9DD98 /* UIImage+Resize.m */; };
+		F3967DAE15CEFD3F00F9DD98 /* UIImage+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D9A15CEFD3F00F9DD98 /* UIImage+RoundedCorners.m */; };
+		F3967DAF15CEFD3F00F9DD98 /* UIImage+Tint.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D9C15CEFD3F00F9DD98 /* UIImage+Tint.m */; };
+		F3967DB015CEFD3F00F9DD98 /* FlexibleCellDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D9F15CEFD3F00F9DD98 /* FlexibleCellDescription.m */; };
+		F3967DB115CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967DA115CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.m */; };
+		F3967DB215CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967DA315CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m */; };
+		F3967DB315CEFD3F00F9DD98 /* FlexibleTableDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967DA515CEFD3F00F9DD98 /* FlexibleTableDatasource.m */; };
+		F3967DB415CEFD3F00F9DD98 /* FlexibleTableStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967DA715CEFD3F00F9DD98 /* FlexibleTableStyleSheet.m */; };
+		F3967DB515CEFD3F00F9DD98 /* FlexibleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967DA915CEFD3F00F9DD98 /* FlexibleTableViewCell.m */; };
+		F3967DEA15CEFEEA00F9DD98 /* FlexibleCellDescription.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D9E15CEFD3F00F9DD98 /* FlexibleCellDescription.h */; };
+		F3967DEB15CEFEEA00F9DD98 /* FlexibleCellDescription.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D9F15CEFD3F00F9DD98 /* FlexibleCellDescription.m */; };
+		F3967DEC15CEFEEA00F9DD98 /* FlexibleGradientBackgroundTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA015CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.h */; };
+		F3967DED15CEFEEA00F9DD98 /* FlexibleGradientBackgroundTable.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA115CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.m */; };
+		F3967DEE15CEFEEA00F9DD98 /* FlexiblePullToRefreshTableViewHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA215CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.h */; };
+		F3967DEF15CEFEEA00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA315CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m */; };
+		F3967DF015CEFEEA00F9DD98 /* FlexibleTableDatasource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA415CEFD3F00F9DD98 /* FlexibleTableDatasource.h */; };
+		F3967DF115CEFEEA00F9DD98 /* FlexibleTableDatasource.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA515CEFD3F00F9DD98 /* FlexibleTableDatasource.m */; };
+		F3967DF215CEFEEA00F9DD98 /* FlexibleTableStyleSheet.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA615CEFD3F00F9DD98 /* FlexibleTableStyleSheet.h */; };
+		F3967DF315CEFEEA00F9DD98 /* FlexibleTableStyleSheet.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA715CEFD3F00F9DD98 /* FlexibleTableStyleSheet.m */; };
+		F3967DF415CEFEEA00F9DD98 /* FlexibleTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA815CEFD3F00F9DD98 /* FlexibleTableViewCell.h */; };
+		F3967DF515CEFEEA00F9DD98 /* FlexibleTableViewCell.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DA915CEFD3F00F9DD98 /* FlexibleTableViewCell.m */; };
+		F3967DF615CEFEEA00F9DD98 /* FlexibleTableViewProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967DAA15CEFD3F00F9DD98 /* FlexibleTableViewProtocol.h */; };
+		F3967DF815CEFF0A00F9DD98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967DF715CEFF0A00F9DD98 /* CoreGraphics.framework */; };
+		F3967DFA15CEFF1700F9DD98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967DF915CEFF1700F9DD98 /* UIKit.framework */; };
+		F3967DFC15CEFF2300F9DD98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967DFB15CEFF2300F9DD98 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3967D0A15CEF8CD00F9DD98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F3655DF615F171270029CCC5 /* FlexibleFRCTableDatasource.h in CopyFiles */,
+				F3655DF715F171270029CCC5 /* FlexibleFRCTableDatasource.m in CopyFiles */,
+				F3967DEA15CEFEEA00F9DD98 /* FlexibleCellDescription.h in CopyFiles */,
+				F3967DEB15CEFEEA00F9DD98 /* FlexibleCellDescription.m in CopyFiles */,
+				F3967DEC15CEFEEA00F9DD98 /* FlexibleGradientBackgroundTable.h in CopyFiles */,
+				F3967DED15CEFEEA00F9DD98 /* FlexibleGradientBackgroundTable.m in CopyFiles */,
+				F3967DEE15CEFEEA00F9DD98 /* FlexiblePullToRefreshTableViewHeader.h in CopyFiles */,
+				F3967DEF15CEFEEA00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m in CopyFiles */,
+				F3967DF015CEFEEA00F9DD98 /* FlexibleTableDatasource.h in CopyFiles */,
+				F3967DF115CEFEEA00F9DD98 /* FlexibleTableDatasource.m in CopyFiles */,
+				F3967DF215CEFEEA00F9DD98 /* FlexibleTableStyleSheet.h in CopyFiles */,
+				F3967DF315CEFEEA00F9DD98 /* FlexibleTableStyleSheet.m in CopyFiles */,
+				F3967DF415CEFEEA00F9DD98 /* FlexibleTableViewCell.h in CopyFiles */,
+				F3967DF515CEFEEA00F9DD98 /* FlexibleTableViewCell.m in CopyFiles */,
+				F3967DF615CEFEEA00F9DD98 /* FlexibleTableViewProtocol.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F3215C4E15EBC68A0060794B /* FlexibleFRCTableDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleFRCTableDatasource.h; sourceTree = "<group>"; };
+		F3215C4F15EBC68A0060794B /* FlexibleFRCTableDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleFRCTableDatasource.m; sourceTree = "<group>"; };
+		F3967D0C15CEF8CD00F9DD98 /* libFlexibleTableLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFlexibleTableLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3967D0F15CEF8CD00F9DD98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3967D1315CEF8CD00F9DD98 /* FlexibleTableLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlexibleTableLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		F3967D9215CEFD3F00F9DD98 /* UIColor+ROAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ROAdditions.h"; sourceTree = "<group>"; };
+		F3967D9315CEFD3F00F9DD98 /* UIColor+ROAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ROAdditions.m"; sourceTree = "<group>"; };
+		F3967D9515CEFD3F00F9DD98 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		F3967D9615CEFD3F00F9DD98 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		F3967D9715CEFD3F00F9DD98 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		F3967D9815CEFD3F00F9DD98 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		F3967D9915CEFD3F00F9DD98 /* UIImage+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorners.h"; sourceTree = "<group>"; };
+		F3967D9A15CEFD3F00F9DD98 /* UIImage+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorners.m"; sourceTree = "<group>"; };
+		F3967D9B15CEFD3F00F9DD98 /* UIImage+Tint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tint.h"; sourceTree = "<group>"; };
+		F3967D9C15CEFD3F00F9DD98 /* UIImage+Tint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tint.m"; sourceTree = "<group>"; };
+		F3967D9D15CEFD3F00F9DD98 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F3967D9E15CEFD3F00F9DD98 /* FlexibleCellDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleCellDescription.h; sourceTree = "<group>"; };
+		F3967D9F15CEFD3F00F9DD98 /* FlexibleCellDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleCellDescription.m; sourceTree = "<group>"; };
+		F3967DA015CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleGradientBackgroundTable.h; sourceTree = "<group>"; };
+		F3967DA115CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleGradientBackgroundTable.m; sourceTree = "<group>"; };
+		F3967DA215CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexiblePullToRefreshTableViewHeader.h; sourceTree = "<group>"; };
+		F3967DA315CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexiblePullToRefreshTableViewHeader.m; sourceTree = "<group>"; };
+		F3967DA415CEFD3F00F9DD98 /* FlexibleTableDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleTableDatasource.h; sourceTree = "<group>"; };
+		F3967DA515CEFD3F00F9DD98 /* FlexibleTableDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleTableDatasource.m; sourceTree = "<group>"; };
+		F3967DA615CEFD3F00F9DD98 /* FlexibleTableStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleTableStyleSheet.h; sourceTree = "<group>"; };
+		F3967DA715CEFD3F00F9DD98 /* FlexibleTableStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleTableStyleSheet.m; sourceTree = "<group>"; };
+		F3967DA815CEFD3F00F9DD98 /* FlexibleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleTableViewCell.h; sourceTree = "<group>"; };
+		F3967DA915CEFD3F00F9DD98 /* FlexibleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlexibleTableViewCell.m; sourceTree = "<group>"; };
+		F3967DAA15CEFD3F00F9DD98 /* FlexibleTableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlexibleTableViewProtocol.h; sourceTree = "<group>"; };
+		F3967DF715CEFF0A00F9DD98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3967DF915CEFF1700F9DD98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3967DFB15CEFF2300F9DD98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3967D0915CEF8CD00F9DD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3967DFC15CEFF2300F9DD98 /* QuartzCore.framework in Frameworks */,
+				F3967DFA15CEFF1700F9DD98 /* UIKit.framework in Frameworks */,
+				F3967DF815CEFF0A00F9DD98 /* CoreGraphics.framework in Frameworks */,
+				F3967D1015CEF8CD00F9DD98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3967D0115CEF8CD00F9DD98 = {
+			isa = PBXGroup;
+			children = (
+				F3967D1115CEF8CD00F9DD98 /* FlexibleTableLibrary */,
+				F3967D0E15CEF8CD00F9DD98 /* Frameworks */,
+				F3967D0D15CEF8CD00F9DD98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3967D0D15CEF8CD00F9DD98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D0C15CEF8CD00F9DD98 /* libFlexibleTableLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3967D0E15CEF8CD00F9DD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3967DFB15CEFF2300F9DD98 /* QuartzCore.framework */,
+				F3967DF915CEFF1700F9DD98 /* UIKit.framework */,
+				F3967DF715CEFF0A00F9DD98 /* CoreGraphics.framework */,
+				F3967D0F15CEF8CD00F9DD98 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3967D1115CEF8CD00F9DD98 /* FlexibleTableLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D8F15CEFD3F00F9DD98 /* Source */,
+				F3967D1215CEF8CD00F9DD98 /* Supporting Files */,
+			);
+			path = FlexibleTableLibrary;
+			sourceTree = "<group>";
+		};
+		F3967D1215CEF8CD00F9DD98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D1315CEF8CD00F9DD98 /* FlexibleTableLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3967D8F15CEFD3F00F9DD98 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D9015CEFD3F00F9DD98 /* Additions */,
+				F3967D9D15CEFD3F00F9DD98 /* Constants.h */,
+				F3967D9E15CEFD3F00F9DD98 /* FlexibleCellDescription.h */,
+				F3967D9F15CEFD3F00F9DD98 /* FlexibleCellDescription.m */,
+				F3967DA015CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.h */,
+				F3967DA115CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.m */,
+				F3967DA215CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.h */,
+				F3967DA315CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m */,
+				F3967DA415CEFD3F00F9DD98 /* FlexibleTableDatasource.h */,
+				F3967DA515CEFD3F00F9DD98 /* FlexibleTableDatasource.m */,
+				F3967DA615CEFD3F00F9DD98 /* FlexibleTableStyleSheet.h */,
+				F3967DA715CEFD3F00F9DD98 /* FlexibleTableStyleSheet.m */,
+				F3967DA815CEFD3F00F9DD98 /* FlexibleTableViewCell.h */,
+				F3967DA915CEFD3F00F9DD98 /* FlexibleTableViewCell.m */,
+				F3967DAA15CEFD3F00F9DD98 /* FlexibleTableViewProtocol.h */,
+				F3215C4E15EBC68A0060794B /* FlexibleFRCTableDatasource.h */,
+				F3215C4F15EBC68A0060794B /* FlexibleFRCTableDatasource.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F3967D9015CEFD3F00F9DD98 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D9115CEFD3F00F9DD98 /* UIColor */,
+				F3967D9415CEFD3F00F9DD98 /* UIImage */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		F3967D9115CEFD3F00F9DD98 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D9215CEFD3F00F9DD98 /* UIColor+ROAdditions.h */,
+				F3967D9315CEFD3F00F9DD98 /* UIColor+ROAdditions.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		F3967D9415CEFD3F00F9DD98 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D9515CEFD3F00F9DD98 /* UIImage+Alpha.h */,
+				F3967D9615CEFD3F00F9DD98 /* UIImage+Alpha.m */,
+				F3967D9715CEFD3F00F9DD98 /* UIImage+Resize.h */,
+				F3967D9815CEFD3F00F9DD98 /* UIImage+Resize.m */,
+				F3967D9915CEFD3F00F9DD98 /* UIImage+RoundedCorners.h */,
+				F3967D9A15CEFD3F00F9DD98 /* UIImage+RoundedCorners.m */,
+				F3967D9B15CEFD3F00F9DD98 /* UIImage+Tint.h */,
+				F3967D9C15CEFD3F00F9DD98 /* UIImage+Tint.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3967D0B15CEF8CD00F9DD98 /* FlexibleTableLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3967D1A15CEF8CD00F9DD98 /* Build configuration list for PBXNativeTarget "FlexibleTableLibrary" */;
+			buildPhases = (
+				F3967D0815CEF8CD00F9DD98 /* Sources */,
+				F3967D0915CEF8CD00F9DD98 /* Frameworks */,
+				F3967D0A15CEF8CD00F9DD98 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlexibleTableLibrary;
+			productName = FlexibleTableLibrary;
+			productReference = F3967D0C15CEF8CD00F9DD98 /* libFlexibleTableLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3967D0315CEF8CD00F9DD98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = VHH;
+			};
+			buildConfigurationList = F3967D0615CEF8CD00F9DD98 /* Build configuration list for PBXProject "FlexibleTableLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3967D0115CEF8CD00F9DD98;
+			productRefGroup = F3967D0D15CEF8CD00F9DD98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3967D0B15CEF8CD00F9DD98 /* FlexibleTableLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3967D0815CEF8CD00F9DD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3967DAB15CEFD3F00F9DD98 /* UIColor+ROAdditions.m in Sources */,
+				F3967DAC15CEFD3F00F9DD98 /* UIImage+Alpha.m in Sources */,
+				F3967DAD15CEFD3F00F9DD98 /* UIImage+Resize.m in Sources */,
+				F3967DAE15CEFD3F00F9DD98 /* UIImage+RoundedCorners.m in Sources */,
+				F3967DAF15CEFD3F00F9DD98 /* UIImage+Tint.m in Sources */,
+				F3967DB015CEFD3F00F9DD98 /* FlexibleCellDescription.m in Sources */,
+				F3967DB115CEFD3F00F9DD98 /* FlexibleGradientBackgroundTable.m in Sources */,
+				F3967DB215CEFD3F00F9DD98 /* FlexiblePullToRefreshTableViewHeader.m in Sources */,
+				F3967DB315CEFD3F00F9DD98 /* FlexibleTableDatasource.m in Sources */,
+				F3967DB415CEFD3F00F9DD98 /* FlexibleTableStyleSheet.m in Sources */,
+				F3967DB515CEFD3F00F9DD98 /* FlexibleTableViewCell.m in Sources */,
+				F3215C5015EBC68A0060794B /* FlexibleFRCTableDatasource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3967D1815CEF8CD00F9DD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3967D1915CEF8CD00F9DD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3967D1B15CEF8CD00F9DD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FlexibleTableLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlexibleTableLibrary/FlexibleTableLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F3967D1C15CEF8CD00F9DD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/FlexibleTableLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlexibleTableLibrary/FlexibleTableLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3967D0615CEF8CD00F9DD98 /* Build configuration list for PBXProject "FlexibleTableLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3967D1815CEF8CD00F9DD98 /* Debug */,
+				F3967D1915CEF8CD00F9DD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3967D1A15CEF8CD00F9DD98 /* Build configuration list for PBXNativeTarget "FlexibleTableLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3967D1B15CEF8CD00F9DD98 /* Debug */,
+				F3967D1C15CEF8CD00F9DD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3967D0315CEF8CD00F9DD98 /* Project object */;
+}

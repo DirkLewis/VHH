@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secrets" optional="YES" attributeType="Transformable" valueTransformerName="EncryptionTransformer" syncable="YES"/>
+        <relationship name="personToToy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Toy" inverseName="toyToPerson" inverseEntity="Toy" syncable="YES"/>
+    </entity>
+    <entity name="Toy" representedClassName="Toy" syncable="YES">
+        <attribute name="toyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toyValue" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="toyToPerson" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="personToToy" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Person" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Toy" positionX="430" positionY="396" width="128" height="90"/>
+    </elements>
+</model>

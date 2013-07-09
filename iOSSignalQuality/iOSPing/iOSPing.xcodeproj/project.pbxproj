@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F333B5F6156BD7C00098941D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333B5F5156BD7C00098941D /* UIKit.framework */; };
+		F333B5F8156BD7C00098941D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333B5F7156BD7C00098941D /* Foundation.framework */; };
+		F333B5FA156BD7C00098941D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333B5F9156BD7C00098941D /* CoreGraphics.framework */; };
+		F333B600156BD7C00098941D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F333B5FE156BD7C00098941D /* InfoPlist.strings */; };
+		F333B602156BD7C00098941D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F333B601156BD7C00098941D /* main.m */; };
+		F333B606156BD7C00098941D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F333B605156BD7C00098941D /* AppDelegate.m */; };
+		F333B609156BD7C00098941D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F333B607156BD7C00098941D /* MainStoryboard_iPhone.storyboard */; };
+		F333B60C156BD7C00098941D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F333B60A156BD7C00098941D /* MainStoryboard_iPad.storyboard */; };
+		F333B617156BD8230098941D /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = F333B616156BD8230098941D /* SimplePing.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F333B619156BD8890098941D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333B618156BD8890098941D /* MobileCoreServices.framework */; };
+		F333B622156BD92D0098941D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F333B621156BD92D0098941D /* CFNetwork.framework */; };
+		F333B62B156BF5F50098941D /* NSMutableData+RandomDataGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = F333B62A156BF5F50098941D /* NSMutableData+RandomDataGeneration.m */; };
+		F3364599156D330200EE839B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3364598156D330200EE839B /* SystemConfiguration.framework */; };
+		F336459C156D650A00EE839B /* NSString+ShortError.m in Sources */ = {isa = PBXBuildFile; fileRef = F336459B156D650A00EE839B /* NSString+ShortError.m */; };
+		F336459F156E5DBF00EE839B /* PingDataAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = F336459E156E5DBF00EE839B /* PingDataAggregator.m */; };
+		F397A23B159A08E9006EBDFD /* bluesignal.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A233159A08E9006EBDFD /* bluesignal.png */; };
+		F397A23C159A08E9006EBDFD /* bluesignal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A234159A08E9006EBDFD /* bluesignal@2x.png */; };
+		F397A23D159A08E9006EBDFD /* greysignal.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A235159A08E9006EBDFD /* greysignal.png */; };
+		F397A23E159A08E9006EBDFD /* greysignal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A236159A08E9006EBDFD /* greysignal@2x.png */; };
+		F397A23F159A08E9006EBDFD /* signalqualitytextBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A237159A08E9006EBDFD /* signalqualitytextBG.png */; };
+		F397A240159A08E9006EBDFD /* signalqualitytextstarBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A238159A08E9006EBDFD /* signalqualitytextstarBG.png */; };
+		F397A241159A08E9006EBDFD /* yellowsignal.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A239159A08E9006EBDFD /* yellowsignal.png */; };
+		F397A242159A08E9006EBDFD /* yellowsignal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F397A23A159A08E9006EBDFD /* yellowsignal@2x.png */; };
+		F397A24A159A0966006EBDFD /* GradientButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F397A244159A0966006EBDFD /* GradientButton.m */; };
+		F397A24B159A0966006EBDFD /* SignalQualityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F397A247159A0966006EBDFD /* SignalQualityViewController.m */; };
+		F397A24C159A0966006EBDFD /* SigQualFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F397A249159A0966006EBDFD /* SigQualFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F333B5F1156BD7C00098941D /* iOSPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F333B5F5156BD7C00098941D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F333B5F7156BD7C00098941D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F333B5F9156BD7C00098941D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F333B5FD156BD7C00098941D /* iOSPing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSPing-Info.plist"; sourceTree = "<group>"; };
+		F333B5FF156BD7C00098941D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F333B601156BD7C00098941D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F333B603156BD7C00098941D /* iOSPing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSPing-Prefix.pch"; sourceTree = "<group>"; };
+		F333B604156BD7C00098941D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F333B605156BD7C00098941D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F333B608156BD7C00098941D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F333B60B156BD7C00098941D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F333B615156BD8230098941D /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		F333B616156BD8230098941D /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
+		F333B618156BD8890098941D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F333B621156BD92D0098941D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F333B629156BF5F50098941D /* NSMutableData+RandomDataGeneration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+RandomDataGeneration.h"; sourceTree = "<group>"; };
+		F333B62A156BF5F50098941D /* NSMutableData+RandomDataGeneration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+RandomDataGeneration.m"; sourceTree = "<group>"; };
+		F3364598156D330200EE839B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F336459A156D650A00EE839B /* NSString+ShortError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ShortError.h"; sourceTree = "<group>"; };
+		F336459B156D650A00EE839B /* NSString+ShortError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShortError.m"; sourceTree = "<group>"; };
+		F336459D156E5DBF00EE839B /* PingDataAggregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PingDataAggregator.h; sourceTree = "<group>"; };
+		F336459E156E5DBF00EE839B /* PingDataAggregator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PingDataAggregator.m; sourceTree = "<group>"; };
+		F397A233159A08E9006EBDFD /* bluesignal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluesignal.png; sourceTree = "<group>"; };
+		F397A234159A08E9006EBDFD /* bluesignal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bluesignal@2x.png"; sourceTree = "<group>"; };
+		F397A235159A08E9006EBDFD /* greysignal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greysignal.png; sourceTree = "<group>"; };
+		F397A236159A08E9006EBDFD /* greysignal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greysignal@2x.png"; sourceTree = "<group>"; };
+		F397A237159A08E9006EBDFD /* signalqualitytextBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signalqualitytextBG.png; sourceTree = "<group>"; };
+		F397A238159A08E9006EBDFD /* signalqualitytextstarBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signalqualitytextstarBG.png; sourceTree = "<group>"; };
+		F397A239159A08E9006EBDFD /* yellowsignal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowsignal.png; sourceTree = "<group>"; };
+		F397A23A159A08E9006EBDFD /* yellowsignal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellowsignal@2x.png"; sourceTree = "<group>"; };
+		F397A243159A0966006EBDFD /* GradientButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientButton.h; sourceTree = "<group>"; };
+		F397A244159A0966006EBDFD /* GradientButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientButton.m; sourceTree = "<group>"; };
+		F397A245159A0966006EBDFD /* SignalQualityConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalQualityConstants.h; sourceTree = "<group>"; };
+		F397A246159A0966006EBDFD /* SignalQualityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalQualityViewController.h; sourceTree = "<group>"; };
+		F397A247159A0966006EBDFD /* SignalQualityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalQualityViewController.m; sourceTree = "<group>"; };
+		F397A248159A0966006EBDFD /* SigQualFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigQualFactory.h; sourceTree = "<group>"; };
+		F397A249159A0966006EBDFD /* SigQualFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigQualFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F333B5EE156BD7C00098941D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3364599156D330200EE839B /* SystemConfiguration.framework in Frameworks */,
+				F333B622156BD92D0098941D /* CFNetwork.framework in Frameworks */,
+				F333B619156BD8890098941D /* MobileCoreServices.framework in Frameworks */,
+				F333B5F6156BD7C00098941D /* UIKit.framework in Frameworks */,
+				F333B5F8156BD7C00098941D /* Foundation.framework in Frameworks */,
+				F333B5FA156BD7C00098941D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F333B5E6156BD7BF0098941D = {
+			isa = PBXGroup;
+			children = (
+				F333B5FB156BD7C00098941D /* iOSPing */,
+				F333B5F4156BD7C00098941D /* Frameworks */,
+				F333B5F2156BD7C00098941D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F333B5F2156BD7C00098941D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F333B5F1156BD7C00098941D /* iOSPing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F333B5F4156BD7C00098941D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3364598156D330200EE839B /* SystemConfiguration.framework */,
+				F333B621156BD92D0098941D /* CFNetwork.framework */,
+				F333B618156BD8890098941D /* MobileCoreServices.framework */,
+				F333B5F5156BD7C00098941D /* UIKit.framework */,
+				F333B5F7156BD7C00098941D /* Foundation.framework */,
+				F333B5F9156BD7C00098941D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F333B5FB156BD7C00098941D /* iOSPing */ = {
+			isa = PBXGroup;
+			children = (
+				F397A232159A08E9006EBDFD /* Images */,
+				F33645A7156E8D3800EE839B /* App files */,
+				F33645A6156E8D0800EE839B /* Pinger */,
+				F333B5FC156BD7C00098941D /* Supporting Files */,
+			);
+			path = iOSPing;
+			sourceTree = "<group>";
+		};
+		F333B5FC156BD7C00098941D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F333B5FD156BD7C00098941D /* iOSPing-Info.plist */,
+				F333B5FE156BD7C00098941D /* InfoPlist.strings */,
+				F333B601156BD7C00098941D /* main.m */,
+				F333B603156BD7C00098941D /* iOSPing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F33645A6156E8D0800EE839B /* Pinger */ = {
+			isa = PBXGroup;
+			children = (
+				F333B629156BF5F50098941D /* NSMutableData+RandomDataGeneration.h */,
+				F333B62A156BF5F50098941D /* NSMutableData+RandomDataGeneration.m */,
+				F336459A156D650A00EE839B /* NSString+ShortError.h */,
+				F336459B156D650A00EE839B /* NSString+ShortError.m */,
+				F336459D156E5DBF00EE839B /* PingDataAggregator.h */,
+				F336459E156E5DBF00EE839B /* PingDataAggregator.m */,
+				F333B615156BD8230098941D /* SimplePing.h */,
+				F333B616156BD8230098941D /* SimplePing.m */,
+			);
+			name = Pinger;
+			sourceTree = "<group>";
+		};
+		F33645A7156E8D3800EE839B /* App files */ = {
+			isa = PBXGroup;
+			children = (
+				F397A243159A0966006EBDFD /* GradientButton.h */,
+				F397A244159A0966006EBDFD /* GradientButton.m */,
+				F397A245159A0966006EBDFD /* SignalQualityConstants.h */,
+				F397A246159A0966006EBDFD /* SignalQualityViewController.h */,
+				F397A247159A0966006EBDFD /* SignalQualityViewController.m */,
+				F397A248159A0966006EBDFD /* SigQualFactory.h */,
+				F397A249159A0966006EBDFD /* SigQualFactory.m */,
+				F333B604156BD7C00098941D /* AppDelegate.h */,
+				F333B605156BD7C00098941D /* AppDelegate.m */,
+				F333B607156BD7C00098941D /* MainStoryboard_iPhone.storyboard */,
+				F333B60A156BD7C00098941D /* MainStoryboard_iPad.storyboard */,
+			);
+			name = "App files";
+			sourceTree = "<group>";
+		};
+		F397A232159A08E9006EBDFD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F397A233159A08E9006EBDFD /* bluesignal.png */,
+				F397A234159A08E9006EBDFD /* bluesignal@2x.png */,
+				F397A235159A08E9006EBDFD /* greysignal.png */,
+				F397A236159A08E9006EBDFD /* greysignal@2x.png */,
+				F397A237159A08E9006EBDFD /* signalqualitytextBG.png */,
+				F397A238159A08E9006EBDFD /* signalqualitytextstarBG.png */,
+				F397A239159A08E9006EBDFD /* yellowsignal.png */,
+				F397A23A159A08E9006EBDFD /* yellowsignal@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F333B5F0156BD7C00098941D /* iOSPing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F333B612156BD7C00098941D /* Build configuration list for PBXNativeTarget "iOSPing" */;
+			buildPhases = (
+				F333B5ED156BD7C00098941D /* Sources */,
+				F333B5EE156BD7C00098941D /* Frameworks */,
+				F333B5EF156BD7C00098941D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSPing;
+			productName = iOSPing;
+			productReference = F333B5F1156BD7C00098941D /* iOSPing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F333B5E8156BD7BF0098941D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Optima HCS";
+			};
+			buildConfigurationList = F333B5EB156BD7BF0098941D /* Build configuration list for PBXProject "iOSPing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F333B5E6156BD7BF0098941D;
+			productRefGroup = F333B5F2156BD7C00098941D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F333B5F0156BD7C00098941D /* iOSPing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F333B5EF156BD7C00098941D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F333B600156BD7C00098941D /* InfoPlist.strings in Resources */,
+				F333B609156BD7C00098941D /* MainStoryboard_iPhone.storyboard in Resources */,
+				F333B60C156BD7C00098941D /* MainStoryboard_iPad.storyboard in Resources */,
+				F397A23B159A08E9006EBDFD /* bluesignal.png in Resources */,
+				F397A23C159A08E9006EBDFD /* bluesignal@2x.png in Resources */,
+				F397A23D159A08E9006EBDFD /* greysignal.png in Resources */,
+				F397A23E159A08E9006EBDFD /* greysignal@2x.png in Resources */,
+				F397A23F159A08E9006EBDFD /* signalqualitytextBG.png in Resources */,
+				F397A240159A08E9006EBDFD /* signalqualitytextstarBG.png in Resources */,
+				F397A241159A08E9006EBDFD /* yellowsignal.png in Resources */,
+				F397A242159A08E9006EBDFD /* yellowsignal@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F333B5ED156BD7C00098941D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F333B602156BD7C00098941D /* main.m in Sources */,
+				F333B606156BD7C00098941D /* AppDelegate.m in Sources */,
+				F333B617156BD8230098941D /* SimplePing.m in Sources */,
+				F333B62B156BF5F50098941D /* NSMutableData+RandomDataGeneration.m in Sources */,
+				F336459C156D650A00EE839B /* NSString+ShortError.m in Sources */,
+				F336459F156E5DBF00EE839B /* PingDataAggregator.m in Sources */,
+				F397A24A159A0966006EBDFD /* GradientButton.m in Sources */,
+				F397A24B159A0966006EBDFD /* SignalQualityViewController.m in Sources */,
+				F397A24C159A0966006EBDFD /* SigQualFactory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F333B5FE156BD7C00098941D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F333B5FF156BD7C00098941D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F333B607156BD7C00098941D /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F333B608156BD7C00098941D /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F333B60A156BD7C00098941D /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F333B60B156BD7C00098941D /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F333B610156BD7C00098941D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F333B611156BD7C00098941D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F333B613156BD7C00098941D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSPing/iOSPing-Prefix.pch";
+				INFOPLIST_FILE = "iOSPing/iOSPing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F333B614156BD7C00098941D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSPing/iOSPing-Prefix.pch";
+				INFOPLIST_FILE = "iOSPing/iOSPing-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F333B5EB156BD7BF0098941D /* Build configuration list for PBXProject "iOSPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F333B610156BD7C00098941D /* Debug */,
+				F333B611156BD7C00098941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F333B612156BD7C00098941D /* Build configuration list for PBXNativeTarget "iOSPing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F333B613156BD7C00098941D /* Debug */,
+				F333B614156BD7C00098941D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F333B5E8156BD7BF0098941D /* Project object */;
+}

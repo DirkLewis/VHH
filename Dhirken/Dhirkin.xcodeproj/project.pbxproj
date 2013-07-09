@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CED61964145F5C7F000C8617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED61963145F5C7F000C8617 /* Foundation.framework */; };
+		CED61972145F5C7F000C8617 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED61971145F5C7F000C8617 /* SenTestingKit.framework */; };
+		CED61975145F5C7F000C8617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED61963145F5C7F000C8617 /* Foundation.framework */; };
+		CED61978145F5C7F000C8617 /* libDhirkin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CED61960145F5C7F000C8617 /* libDhirkin.a */; };
+		CED6197E145F5C7F000C8617 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CED6197C145F5C7F000C8617 /* InfoPlist.strings */; };
+		CED61981145F5C7F000C8617 /* DhirkinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CED61980145F5C7F000C8617 /* DhirkinTests.m */; };
+		CED61999145F5CBE000C8617 /* Dhirkin.h in Headers */ = {isa = PBXBuildFile; fileRef = CED6198D145F5CBE000C8617 /* Dhirkin.h */; };
+		CED6199A145F5CBE000C8617 /* Dhirkin.m in Sources */ = {isa = PBXBuildFile; fileRef = CED6198E145F5CBE000C8617 /* Dhirkin.m */; };
+		CED6199D145F5CBE000C8617 /* Feature.h in Headers */ = {isa = PBXBuildFile; fileRef = CED61991145F5CBE000C8617 /* Feature.h */; };
+		CED6199E145F5CBE000C8617 /* Feature.m in Sources */ = {isa = PBXBuildFile; fileRef = CED61992145F5CBE000C8617 /* Feature.m */; };
+		CED6199F145F5CBE000C8617 /* Scenario.h in Headers */ = {isa = PBXBuildFile; fileRef = CED61993145F5CBE000C8617 /* Scenario.h */; };
+		CED619A0145F5CBE000C8617 /* Scenario.m in Sources */ = {isa = PBXBuildFile; fileRef = CED61994145F5CBE000C8617 /* Scenario.m */; };
+		CED619A1145F5CBE000C8617 /* ScenarioStep.h in Headers */ = {isa = PBXBuildFile; fileRef = CED61995145F5CBE000C8617 /* ScenarioStep.h */; };
+		CED619A2145F5CBE000C8617 /* ScenarioStep.m in Sources */ = {isa = PBXBuildFile; fileRef = CED61996145F5CBE000C8617 /* ScenarioStep.m */; };
+		F325D99B1483E0EE00DD9FDF /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F325D99A1483E0EE00DD9FDF /* Constants.h */; };
+		F34456FC14855A9D0065EE6C /* NSString+Dhirkin.h in Headers */ = {isa = PBXBuildFile; fileRef = F34456FA14855A9D0065EE6C /* NSString+Dhirkin.h */; };
+		F34456FD14855A9D0065EE6C /* NSString+Dhirkin.m in Sources */ = {isa = PBXBuildFile; fileRef = F34456FB14855A9D0065EE6C /* NSString+Dhirkin.m */; };
+		F35AAE0414851099008D9117 /* NSMutableArray+MultiDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = F35AAE0214851099008D9117 /* NSMutableArray+MultiDimension.h */; };
+		F35AAE0514851099008D9117 /* NSMutableArray+MultiDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = F35AAE0314851099008D9117 /* NSMutableArray+MultiDimension.m */; };
+		F387E1C6147D4B3000567857 /* TokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F387E1C4147D4B3000567857 /* TokenUtilities.h */; };
+		F387E1C7147D4B3000567857 /* TokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F387E1C5147D4B3000567857 /* TokenUtilities.m */; };
+		F387E1CB147D4BC100567857 /* GherkinUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F387E1C9147D4BC100567857 /* GherkinUtilities.h */; };
+		F387E1CC147D4BC100567857 /* GherkinUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F387E1CA147D4BC100567857 /* GherkinUtilities.m */; };
+		F3FA3274148684F100330C34 /* Examples.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FA3272148684F100330C34 /* Examples.h */; };
+		F3FA3275148684F100330C34 /* Examples.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FA3273148684F100330C34 /* Examples.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CED61976145F5C7F000C8617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED61957145F5C7F000C8617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED6195F145F5C7F000C8617;
+			remoteInfo = Dhirkin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CED61960145F5C7F000C8617 /* libDhirkin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDhirkin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED61963145F5C7F000C8617 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CED61967145F5C7F000C8617 /* Dhirkin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dhirkin-Prefix.pch"; sourceTree = "<group>"; };
+		CED61970145F5C7F000C8617 /* DhirkinTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DhirkinTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED61971145F5C7F000C8617 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CED6197B145F5C7F000C8617 /* DhirkinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DhirkinTests-Info.plist"; sourceTree = "<group>"; };
+		CED6197D145F5C7F000C8617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CED6197F145F5C7F000C8617 /* DhirkinTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DhirkinTests.h; sourceTree = "<group>"; };
+		CED61980145F5C7F000C8617 /* DhirkinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DhirkinTests.m; sourceTree = "<group>"; };
+		CED6198D145F5CBE000C8617 /* Dhirkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dhirkin.h; sourceTree = "<group>"; };
+		CED6198E145F5CBE000C8617 /* Dhirkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dhirkin.m; sourceTree = "<group>"; };
+		CED61991145F5CBE000C8617 /* Feature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feature.h; sourceTree = "<group>"; };
+		CED61992145F5CBE000C8617 /* Feature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feature.m; sourceTree = "<group>"; };
+		CED61993145F5CBE000C8617 /* Scenario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
+		CED61994145F5CBE000C8617 /* Scenario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scenario.m; sourceTree = "<group>"; };
+		CED61995145F5CBE000C8617 /* ScenarioStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenarioStep.h; sourceTree = "<group>"; };
+		CED61996145F5CBE000C8617 /* ScenarioStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenarioStep.m; sourceTree = "<group>"; };
+		F325D99A1483E0EE00DD9FDF /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F34456FA14855A9D0065EE6C /* NSString+Dhirkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Dhirkin.h"; sourceTree = "<group>"; };
+		F34456FB14855A9D0065EE6C /* NSString+Dhirkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Dhirkin.m"; sourceTree = "<group>"; };
+		F35AAE0214851099008D9117 /* NSMutableArray+MultiDimension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MultiDimension.h"; sourceTree = "<group>"; };
+		F35AAE0314851099008D9117 /* NSMutableArray+MultiDimension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MultiDimension.m"; sourceTree = "<group>"; };
+		F377EA5D147AE97A00899082 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F377EA60147AED3500899082 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F387E1C4147D4B3000567857 /* TokenUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenUtilities.h; sourceTree = "<group>"; };
+		F387E1C5147D4B3000567857 /* TokenUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenUtilities.m; sourceTree = "<group>"; };
+		F387E1C9147D4BC100567857 /* GherkinUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GherkinUtilities.h; sourceTree = "<group>"; };
+		F387E1CA147D4BC100567857 /* GherkinUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GherkinUtilities.m; sourceTree = "<group>"; };
+		F3FA3272148684F100330C34 /* Examples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Examples.h; sourceTree = "<group>"; };
+		F3FA3273148684F100330C34 /* Examples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Examples.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED6195D145F5C7F000C8617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED61964145F5C7F000C8617 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED6196C145F5C7F000C8617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED61972145F5C7F000C8617 /* SenTestingKit.framework in Frameworks */,
+				CED61975145F5C7F000C8617 /* Foundation.framework in Frameworks */,
+				CED61978145F5C7F000C8617 /* libDhirkin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED61955145F5C7F000C8617 = {
+			isa = PBXGroup;
+			children = (
+				CED61965145F5C7F000C8617 /* Dhirkin */,
+				CED61979145F5C7F000C8617 /* DhirkinTests */,
+				CED61962145F5C7F000C8617 /* Frameworks */,
+				CED61961145F5C7F000C8617 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED61961145F5C7F000C8617 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED61960145F5C7F000C8617 /* libDhirkin.a */,
+				CED61970145F5C7F000C8617 /* DhirkinTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED61962145F5C7F000C8617 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F377EA5D147AE97A00899082 /* libicucore.dylib */,
+				F377EA60147AED3500899082 /* CoreGraphics.framework */,
+				CED61963145F5C7F000C8617 /* Foundation.framework */,
+				CED61971145F5C7F000C8617 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED61965145F5C7F000C8617 /* Dhirkin */ = {
+			isa = PBXGroup;
+			children = (
+				CED6198A145F5CBE000C8617 /* Classes */,
+				CED61966145F5C7F000C8617 /* Supporting Files */,
+			);
+			path = Dhirkin;
+			sourceTree = "<group>";
+		};
+		CED61966145F5C7F000C8617 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED61967145F5C7F000C8617 /* Dhirkin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CED61979145F5C7F000C8617 /* DhirkinTests */ = {
+			isa = PBXGroup;
+			children = (
+				CED6197F145F5C7F000C8617 /* DhirkinTests.h */,
+				CED61980145F5C7F000C8617 /* DhirkinTests.m */,
+				CED6197A145F5C7F000C8617 /* Supporting Files */,
+			);
+			path = DhirkinTests;
+			sourceTree = "<group>";
+		};
+		CED6197A145F5C7F000C8617 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CED6197B145F5C7F000C8617 /* DhirkinTests-Info.plist */,
+				CED6197C145F5C7F000C8617 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CED6198A145F5CBE000C8617 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CED6198D145F5CBE000C8617 /* Dhirkin.h */,
+				CED6198E145F5CBE000C8617 /* Dhirkin.m */,
+				CED61991145F5CBE000C8617 /* Feature.h */,
+				CED61992145F5CBE000C8617 /* Feature.m */,
+				CED61993145F5CBE000C8617 /* Scenario.h */,
+				CED61994145F5CBE000C8617 /* Scenario.m */,
+				CED61995145F5CBE000C8617 /* ScenarioStep.h */,
+				CED61996145F5CBE000C8617 /* ScenarioStep.m */,
+				F387E1C4147D4B3000567857 /* TokenUtilities.h */,
+				F387E1C5147D4B3000567857 /* TokenUtilities.m */,
+				F387E1C9147D4BC100567857 /* GherkinUtilities.h */,
+				F387E1CA147D4BC100567857 /* GherkinUtilities.m */,
+				F325D99A1483E0EE00DD9FDF /* Constants.h */,
+				F35AAE0214851099008D9117 /* NSMutableArray+MultiDimension.h */,
+				F35AAE0314851099008D9117 /* NSMutableArray+MultiDimension.m */,
+				F34456FA14855A9D0065EE6C /* NSString+Dhirkin.h */,
+				F34456FB14855A9D0065EE6C /* NSString+Dhirkin.m */,
+				F3FA3272148684F100330C34 /* Examples.h */,
+				F3FA3273148684F100330C34 /* Examples.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CED6195E145F5C7F000C8617 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED61999145F5CBE000C8617 /* Dhirkin.h in Headers */,
+				CED6199D145F5CBE000C8617 /* Feature.h in Headers */,
+				CED6199F145F5CBE000C8617 /* Scenario.h in Headers */,
+				CED619A1145F5CBE000C8617 /* ScenarioStep.h in Headers */,
+				F387E1C6147D4B3000567857 /* TokenUtilities.h in Headers */,
+				F387E1CB147D4BC100567857 /* GherkinUtilities.h in Headers */,
+				F325D99B1483E0EE00DD9FDF /* Constants.h in Headers */,
+				F35AAE0414851099008D9117 /* NSMutableArray+MultiDimension.h in Headers */,
+				F34456FC14855A9D0065EE6C /* NSString+Dhirkin.h in Headers */,
+				F3FA3274148684F100330C34 /* Examples.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CED6195F145F5C7F000C8617 /* Dhirkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED61984145F5C7F000C8617 /* Build configuration list for PBXNativeTarget "Dhirkin" */;
+			buildPhases = (
+				CED6195C145F5C7F000C8617 /* Sources */,
+				CED6195D145F5C7F000C8617 /* Frameworks */,
+				CED6195E145F5C7F000C8617 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dhirkin;
+			productName = Dhirkin;
+			productReference = CED61960145F5C7F000C8617 /* libDhirkin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CED6196F145F5C7F000C8617 /* DhirkinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED61987145F5C7F000C8617 /* Build configuration list for PBXNativeTarget "DhirkinTests" */;
+			buildPhases = (
+				CED6196B145F5C7F000C8617 /* Sources */,
+				CED6196C145F5C7F000C8617 /* Frameworks */,
+				CED6196D145F5C7F000C8617 /* Resources */,
+				CED6196E145F5C7F000C8617 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED61977145F5C7F000C8617 /* PBXTargetDependency */,
+			);
+			name = DhirkinTests;
+			productName = DhirkinTests;
+			productReference = CED61970145F5C7F000C8617 /* DhirkinTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED61957145F5C7F000C8617 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CED6195A145F5C7F000C8617 /* Build configuration list for PBXProject "Dhirkin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CED61955145F5C7F000C8617;
+			productRefGroup = CED61961145F5C7F000C8617 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED6195F145F5C7F000C8617 /* Dhirkin */,
+				CED6196F145F5C7F000C8617 /* DhirkinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED6196D145F5C7F000C8617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED6197E145F5C7F000C8617 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CED6196E145F5C7F000C8617 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED6195C145F5C7F000C8617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED6199A145F5CBE000C8617 /* Dhirkin.m in Sources */,
+				CED6199E145F5CBE000C8617 /* Feature.m in Sources */,
+				CED619A0145F5CBE000C8617 /* Scenario.m in Sources */,
+				CED619A2145F5CBE000C8617 /* ScenarioStep.m in Sources */,
+				F387E1C7147D4B3000567857 /* TokenUtilities.m in Sources */,
+				F387E1CC147D4BC100567857 /* GherkinUtilities.m in Sources */,
+				F35AAE0514851099008D9117 /* NSMutableArray+MultiDimension.m in Sources */,
+				F34456FD14855A9D0065EE6C /* NSString+Dhirkin.m in Sources */,
+				F3FA3275148684F100330C34 /* Examples.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED6196B145F5C7F000C8617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED61981145F5C7F000C8617 /* DhirkinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED61977145F5C7F000C8617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED6195F145F5C7F000C8617 /* Dhirkin */;
+			targetProxy = CED61976145F5C7F000C8617 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CED6197C145F5C7F000C8617 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED6197D145F5C7F000C8617 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED61982145F5C7F000C8617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CED61983145F5C7F000C8617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED61985145F5C7F000C8617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Dhirkin.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dhirkin/Dhirkin-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CED61986145F5C7F000C8617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Dhirkin.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dhirkin/Dhirkin-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CED61988145F5C7F000C8617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dhirkin/Dhirkin-Prefix.pch";
+				INFOPLIST_FILE = "DhirkinTests/DhirkinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CED61989145F5C7F000C8617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dhirkin/Dhirkin-Prefix.pch";
+				INFOPLIST_FILE = "DhirkinTests/DhirkinTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED6195A145F5C7F000C8617 /* Build configuration list for PBXProject "Dhirkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED61982145F5C7F000C8617 /* Debug */,
+				CED61983145F5C7F000C8617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED61984145F5C7F000C8617 /* Build configuration list for PBXNativeTarget "Dhirkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED61985145F5C7F000C8617 /* Debug */,
+				CED61986145F5C7F000C8617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED61987145F5C7F000C8617 /* Build configuration list for PBXNativeTarget "DhirkinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED61988145F5C7F000C8617 /* Debug */,
+				CED61989145F5C7F000C8617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED61957145F5C7F000C8617 /* Project object */;
+}

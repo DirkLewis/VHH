@@ -1,0 +1,15 @@
+//
+// Prefix header for all source files of the 'CoreLoggingLibrary' target in the 'CoreLoggingLibrary' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import "DDLog.h"
+#import "LoggingDefinition.h"
+#import "DDTTYLogger.h"
+#import "DDASLLogger.h"
+#import "DDFileLogger.h"
+#import "DDAbstractDatabaseLogger.h"
+#import "CoreDataLogger.h"
+#import "LoggingController.h"
+#endif

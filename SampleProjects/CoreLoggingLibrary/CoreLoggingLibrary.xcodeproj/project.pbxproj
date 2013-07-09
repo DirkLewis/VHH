@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3967CD815CEF87400F9DD98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967CD715CEF87400F9DD98 /* Foundation.framework */; };
+		F3967D4615CEFA7900F9DD98 /* CoreDataLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D2F15CEFA7900F9DD98 /* CoreDataLogger.m */; };
+		F3967D4715CEFA7900F9DD98 /* LoggingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D3115CEFA7900F9DD98 /* LoggingController.m */; };
+		F3967D4815CEFA7900F9DD98 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D3515CEFA7900F9DD98 /* DDAbstractDatabaseLogger.m */; };
+		F3967D4915CEFA7900F9DD98 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D3715CEFA7900F9DD98 /* DDASLLogger.m */; };
+		F3967D4A15CEFA7900F9DD98 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D3915CEFA7900F9DD98 /* DDFileLogger.m */; };
+		F3967D4B15CEFA7900F9DD98 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D3B15CEFA7900F9DD98 /* DDLog.m */; };
+		F3967D4C15CEFA7900F9DD98 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D3D15CEFA7900F9DD98 /* DDTTYLogger.m */; };
+		F3967D4D15CEFA7900F9DD98 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D4015CEFA7900F9DD98 /* ContextFilterLogFormatter.m */; };
+		F3967D4E15CEFA7900F9DD98 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D4215CEFA7900F9DD98 /* DispatchQueueLogFormatter.m */; };
+		F3967D5015CEFAF800F9DD98 /* CoreDataLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D2E15CEFA7900F9DD98 /* CoreDataLogger.h */; };
+		F3967D5115CEFAF800F9DD98 /* CoreDataLogger.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D2F15CEFA7900F9DD98 /* CoreDataLogger.m */; };
+		F3967D5215CEFAF800F9DD98 /* LoggingController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D3015CEFA7900F9DD98 /* LoggingController.h */; };
+		F3967D5315CEFAF800F9DD98 /* LoggingController.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D3115CEFA7900F9DD98 /* LoggingController.m */; };
+		F3967D5415CEFAF800F9DD98 /* LoggingDefinition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D3215CEFA7900F9DD98 /* LoggingDefinition.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3967CD215CEF87400F9DD98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F3967D5015CEFAF800F9DD98 /* CoreDataLogger.h in CopyFiles */,
+				F3967D5115CEFAF800F9DD98 /* CoreDataLogger.m in CopyFiles */,
+				F3967D5215CEFAF800F9DD98 /* LoggingController.h in CopyFiles */,
+				F3967D5315CEFAF800F9DD98 /* LoggingController.m in CopyFiles */,
+				F3967D5415CEFAF800F9DD98 /* LoggingDefinition.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F3967CD415CEF87400F9DD98 /* libCoreLoggingLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreLoggingLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3967CD715CEF87400F9DD98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3967CDB15CEF87400F9DD98 /* CoreLoggingLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreLoggingLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		F3967D2E15CEFA7900F9DD98 /* CoreDataLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataLogger.h; sourceTree = "<group>"; };
+		F3967D2F15CEFA7900F9DD98 /* CoreDataLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataLogger.m; sourceTree = "<group>"; };
+		F3967D3015CEFA7900F9DD98 /* LoggingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingController.h; sourceTree = "<group>"; };
+		F3967D3115CEFA7900F9DD98 /* LoggingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggingController.m; sourceTree = "<group>"; };
+		F3967D3215CEFA7900F9DD98 /* LoggingDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingDefinition.h; sourceTree = "<group>"; };
+		F3967D3415CEFA7900F9DD98 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		F3967D3515CEFA7900F9DD98 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		F3967D3615CEFA7900F9DD98 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		F3967D3715CEFA7900F9DD98 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		F3967D3815CEFA7900F9DD98 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		F3967D3915CEFA7900F9DD98 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		F3967D3A15CEFA7900F9DD98 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		F3967D3B15CEFA7900F9DD98 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		F3967D3C15CEFA7900F9DD98 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		F3967D3D15CEFA7900F9DD98 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		F3967D3F15CEFA7900F9DD98 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		F3967D4015CEFA7900F9DD98 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		F3967D4115CEFA7900F9DD98 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		F3967D4215CEFA7900F9DD98 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		F3967D4315CEFA7900F9DD98 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		F3967D4515CEFA7900F9DD98 /* CoreLoggingProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLoggingProtocols.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3967CD115CEF87400F9DD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3967CD815CEF87400F9DD98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3967CC915CEF87400F9DD98 = {
+			isa = PBXGroup;
+			children = (
+				F3967CD915CEF87400F9DD98 /* CoreLoggingLibrary */,
+				F3967CD615CEF87400F9DD98 /* Frameworks */,
+				F3967CD515CEF87400F9DD98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3967CD515CEF87400F9DD98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3967CD415CEF87400F9DD98 /* libCoreLoggingLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3967CD615CEF87400F9DD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3967CD715CEF87400F9DD98 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3967CD915CEF87400F9DD98 /* CoreLoggingLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D2C15CEFA7900F9DD98 /* Source */,
+				F3967CDA15CEF87400F9DD98 /* Supporting Files */,
+			);
+			path = CoreLoggingLibrary;
+			sourceTree = "<group>";
+		};
+		F3967CDA15CEF87400F9DD98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3967CDB15CEF87400F9DD98 /* CoreLoggingLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3967D2C15CEFA7900F9DD98 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D2D15CEFA7900F9DD98 /* Logging */,
+				F3967D3315CEFA7900F9DD98 /* LumberJack */,
+				F3967D4415CEFA7900F9DD98 /* Protocols */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F3967D2D15CEFA7900F9DD98 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D2E15CEFA7900F9DD98 /* CoreDataLogger.h */,
+				F3967D2F15CEFA7900F9DD98 /* CoreDataLogger.m */,
+				F3967D3015CEFA7900F9DD98 /* LoggingController.h */,
+				F3967D3115CEFA7900F9DD98 /* LoggingController.m */,
+				F3967D3215CEFA7900F9DD98 /* LoggingDefinition.h */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		F3967D3315CEFA7900F9DD98 /* LumberJack */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D3415CEFA7900F9DD98 /* DDAbstractDatabaseLogger.h */,
+				F3967D3515CEFA7900F9DD98 /* DDAbstractDatabaseLogger.m */,
+				F3967D3615CEFA7900F9DD98 /* DDASLLogger.h */,
+				F3967D3715CEFA7900F9DD98 /* DDASLLogger.m */,
+				F3967D3815CEFA7900F9DD98 /* DDFileLogger.h */,
+				F3967D3915CEFA7900F9DD98 /* DDFileLogger.m */,
+				F3967D3A15CEFA7900F9DD98 /* DDLog.h */,
+				F3967D3B15CEFA7900F9DD98 /* DDLog.m */,
+				F3967D3C15CEFA7900F9DD98 /* DDTTYLogger.h */,
+				F3967D3D15CEFA7900F9DD98 /* DDTTYLogger.m */,
+				F3967D3E15CEFA7900F9DD98 /* Extensions */,
+			);
+			path = LumberJack;
+			sourceTree = "<group>";
+		};
+		F3967D3E15CEFA7900F9DD98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D3F15CEFA7900F9DD98 /* ContextFilterLogFormatter.h */,
+				F3967D4015CEFA7900F9DD98 /* ContextFilterLogFormatter.m */,
+				F3967D4115CEFA7900F9DD98 /* DispatchQueueLogFormatter.h */,
+				F3967D4215CEFA7900F9DD98 /* DispatchQueueLogFormatter.m */,
+				F3967D4315CEFA7900F9DD98 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3967D4415CEFA7900F9DD98 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D4515CEFA7900F9DD98 /* CoreLoggingProtocols.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3967CD315CEF87400F9DD98 /* CoreLoggingLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3967CE215CEF87400F9DD98 /* Build configuration list for PBXNativeTarget "CoreLoggingLibrary" */;
+			buildPhases = (
+				F3967CD015CEF87400F9DD98 /* Sources */,
+				F3967CD115CEF87400F9DD98 /* Frameworks */,
+				F3967CD215CEF87400F9DD98 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreLoggingLibrary;
+			productName = CoreLoggingLibrary;
+			productReference = F3967CD415CEF87400F9DD98 /* libCoreLoggingLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3967CCB15CEF87400F9DD98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = VHH;
+			};
+			buildConfigurationList = F3967CCE15CEF87400F9DD98 /* Build configuration list for PBXProject "CoreLoggingLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3967CC915CEF87400F9DD98;
+			productRefGroup = F3967CD515CEF87400F9DD98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3967CD315CEF87400F9DD98 /* CoreLoggingLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3967CD015CEF87400F9DD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3967D4615CEFA7900F9DD98 /* CoreDataLogger.m in Sources */,
+				F3967D4715CEFA7900F9DD98 /* LoggingController.m in Sources */,
+				F3967D4815CEFA7900F9DD98 /* DDAbstractDatabaseLogger.m in Sources */,
+				F3967D4915CEFA7900F9DD98 /* DDASLLogger.m in Sources */,
+				F3967D4A15CEFA7900F9DD98 /* DDFileLogger.m in Sources */,
+				F3967D4B15CEFA7900F9DD98 /* DDLog.m in Sources */,
+				F3967D4C15CEFA7900F9DD98 /* DDTTYLogger.m in Sources */,
+				F3967D4D15CEFA7900F9DD98 /* ContextFilterLogFormatter.m in Sources */,
+				F3967D4E15CEFA7900F9DD98 /* DispatchQueueLogFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3967CE015CEF87400F9DD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3967CE115CEF87400F9DD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3967CE315CEF87400F9DD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CoreLoggingLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLoggingLibrary/CoreLoggingLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F3967CE415CEF87400F9DD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CoreLoggingLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreLoggingLibrary/CoreLoggingLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3967CCE15CEF87400F9DD98 /* Build configuration list for PBXProject "CoreLoggingLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3967CE015CEF87400F9DD98 /* Debug */,
+				F3967CE115CEF87400F9DD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3967CE215CEF87400F9DD98 /* Build configuration list for PBXNativeTarget "CoreLoggingLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3967CE315CEF87400F9DD98 /* Debug */,
+				F3967CE415CEF87400F9DD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3967CCB15CEF87400F9DD98 /* Project object */;
+}

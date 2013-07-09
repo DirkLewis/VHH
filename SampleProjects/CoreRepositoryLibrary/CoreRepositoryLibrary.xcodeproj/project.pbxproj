@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3655E2015F263E60029CCC5 /* UnsecuredRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3655E1F15F263E60029CCC5 /* UnsecuredRepository.m */; };
+		F3655E2215F265480029CCC5 /* UnsecuredRepository.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3655E1E15F263E60029CCC5 /* UnsecuredRepository.h */; };
+		F3655E2315F265480029CCC5 /* UnsecuredRepository.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3655E1F15F263E60029CCC5 /* UnsecuredRepository.m */; };
+		F3967CBC15CEF82000F9DD98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967CBB15CEF82000F9DD98 /* Foundation.framework */; };
+		F3967D7215CEFC9700F9DD98 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D5815CEFC9700F9DD98 /* NSData+Additions.m */; };
+		F3967D7315CEFC9700F9DD98 /* SQLiteBackingstore.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D5B15CEFC9700F9DD98 /* SQLiteBackingstore.m */; };
+		F3967D7415CEFC9700F9DD98 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D5E15CEFC9700F9DD98 /* Repository.m */; };
+		F3967D7515CEFC9700F9DD98 /* DataEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D6115CEFC9700F9DD98 /* DataEncryption.m */; };
+		F3967D7615CEFC9700F9DD98 /* RepositoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D6415CEFC9700F9DD98 /* RepositoryFactory.m */; };
+		F3967D7715CEFC9700F9DD98 /* FieldLevelRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D6A15CEFC9700F9DD98 /* FieldLevelRepository.m */; };
+		F3967D7815CEFC9700F9DD98 /* FileLevelRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D6C15CEFC9700F9DD98 /* FileLevelRepository.m */; };
+		F3967D7915CEFC9700F9DD98 /* FieldLevelSecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D6F15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.m */; };
+		F3967D7A15CEFC9700F9DD98 /* FileLevelSecurityStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3967D7115CEFC9700F9DD98 /* FileLevelSecurityStrategy.m */; };
+		F3967D7D15CEFCAB00F9DD98 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3967D7C15CEFCAB00F9DD98 /* CoreData.framework */; };
+		F3967D7E15CEFCDE00F9DD98 /* SQLiteBackingstore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D5A15CEFC9700F9DD98 /* SQLiteBackingstore.h */; };
+		F3967D7F15CEFCDE00F9DD98 /* SQLiteBackingstore.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D5B15CEFC9700F9DD98 /* SQLiteBackingstore.m */; };
+		F3967D8015CEFCDE00F9DD98 /* Repository.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D5D15CEFC9700F9DD98 /* Repository.h */; };
+		F3967D8115CEFCDE00F9DD98 /* Repository.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D5E15CEFC9700F9DD98 /* Repository.m */; };
+		F3967D8215CEFCDE00F9DD98 /* RepositoryFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6315CEFC9700F9DD98 /* RepositoryFactory.h */; };
+		F3967D8315CEFCDE00F9DD98 /* RepositoryFactory.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6415CEFC9700F9DD98 /* RepositoryFactory.m */; };
+		F3967D8415CEFCDE00F9DD98 /* BackingstoreProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6615CEFC9700F9DD98 /* BackingstoreProtocol.h */; };
+		F3967D8515CEFCDE00F9DD98 /* RepositoryProtocols.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6715CEFC9700F9DD98 /* RepositoryProtocols.h */; };
+		F3967D8615CEFCDE00F9DD98 /* FieldLevelRepository.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6915CEFC9700F9DD98 /* FieldLevelRepository.h */; };
+		F3967D8715CEFCDE00F9DD98 /* FieldLevelRepository.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6A15CEFC9700F9DD98 /* FieldLevelRepository.m */; };
+		F3967D8815CEFCDE00F9DD98 /* FileLevelRepository.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6B15CEFC9700F9DD98 /* FileLevelRepository.h */; };
+		F3967D8915CEFCDE00F9DD98 /* FileLevelRepository.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6C15CEFC9700F9DD98 /* FileLevelRepository.m */; };
+		F3967D8A15CEFCDE00F9DD98 /* FieldLevelSecurityStrategy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6E15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.h */; };
+		F3967D8B15CEFCDE00F9DD98 /* FieldLevelSecurityStrategy.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D6F15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.m */; };
+		F3967D8C15CEFCDE00F9DD98 /* FileLevelSecurityStrategy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D7015CEFC9700F9DD98 /* FileLevelSecurityStrategy.h */; };
+		F3967D8D15CEFCDE00F9DD98 /* FileLevelSecurityStrategy.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967D7115CEFC9700F9DD98 /* FileLevelSecurityStrategy.m */; };
+		F3967E0515CF010A00F9DD98 /* CoreRepositoryLibraryHeaders.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3967E0415CF00B900F9DD98 /* CoreRepositoryLibraryHeaders.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3967CB615CEF82000F9DD98 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				F3655E2215F265480029CCC5 /* UnsecuredRepository.h in CopyFiles */,
+				F3655E2315F265480029CCC5 /* UnsecuredRepository.m in CopyFiles */,
+				F3967E0515CF010A00F9DD98 /* CoreRepositoryLibraryHeaders.h in CopyFiles */,
+				F3967D7E15CEFCDE00F9DD98 /* SQLiteBackingstore.h in CopyFiles */,
+				F3967D7F15CEFCDE00F9DD98 /* SQLiteBackingstore.m in CopyFiles */,
+				F3967D8015CEFCDE00F9DD98 /* Repository.h in CopyFiles */,
+				F3967D8115CEFCDE00F9DD98 /* Repository.m in CopyFiles */,
+				F3967D8215CEFCDE00F9DD98 /* RepositoryFactory.h in CopyFiles */,
+				F3967D8315CEFCDE00F9DD98 /* RepositoryFactory.m in CopyFiles */,
+				F3967D8415CEFCDE00F9DD98 /* BackingstoreProtocol.h in CopyFiles */,
+				F3967D8515CEFCDE00F9DD98 /* RepositoryProtocols.h in CopyFiles */,
+				F3967D8615CEFCDE00F9DD98 /* FieldLevelRepository.h in CopyFiles */,
+				F3967D8715CEFCDE00F9DD98 /* FieldLevelRepository.m in CopyFiles */,
+				F3967D8815CEFCDE00F9DD98 /* FileLevelRepository.h in CopyFiles */,
+				F3967D8915CEFCDE00F9DD98 /* FileLevelRepository.m in CopyFiles */,
+				F3967D8A15CEFCDE00F9DD98 /* FieldLevelSecurityStrategy.h in CopyFiles */,
+				F3967D8B15CEFCDE00F9DD98 /* FieldLevelSecurityStrategy.m in CopyFiles */,
+				F3967D8C15CEFCDE00F9DD98 /* FileLevelSecurityStrategy.h in CopyFiles */,
+				F3967D8D15CEFCDE00F9DD98 /* FileLevelSecurityStrategy.m in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F3655E1E15F263E60029CCC5 /* UnsecuredRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsecuredRepository.h; sourceTree = "<group>"; };
+		F3655E1F15F263E60029CCC5 /* UnsecuredRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsecuredRepository.m; sourceTree = "<group>"; };
+		F3967CB815CEF82000F9DD98 /* libCoreRepositoryLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreRepositoryLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3967CBB15CEF82000F9DD98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3967CBF15CEF82000F9DD98 /* CoreRepositoryLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreRepositoryLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		F3967D5715CEFC9700F9DD98 /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		F3967D5815CEFC9700F9DD98 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		F3967D5A15CEFC9700F9DD98 /* SQLiteBackingstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteBackingstore.h; sourceTree = "<group>"; };
+		F3967D5B15CEFC9700F9DD98 /* SQLiteBackingstore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteBackingstore.m; sourceTree = "<group>"; };
+		F3967D5D15CEFC9700F9DD98 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		F3967D5E15CEFC9700F9DD98 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		F3967D6015CEFC9700F9DD98 /* DataEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEncryption.h; sourceTree = "<group>"; };
+		F3967D6115CEFC9700F9DD98 /* DataEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEncryption.m; sourceTree = "<group>"; };
+		F3967D6315CEFC9700F9DD98 /* RepositoryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryFactory.h; sourceTree = "<group>"; };
+		F3967D6415CEFC9700F9DD98 /* RepositoryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryFactory.m; sourceTree = "<group>"; };
+		F3967D6615CEFC9700F9DD98 /* BackingstoreProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackingstoreProtocol.h; sourceTree = "<group>"; };
+		F3967D6715CEFC9700F9DD98 /* RepositoryProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryProtocols.h; sourceTree = "<group>"; };
+		F3967D6915CEFC9700F9DD98 /* FieldLevelRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldLevelRepository.h; sourceTree = "<group>"; };
+		F3967D6A15CEFC9700F9DD98 /* FieldLevelRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldLevelRepository.m; sourceTree = "<group>"; };
+		F3967D6B15CEFC9700F9DD98 /* FileLevelRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLevelRepository.h; sourceTree = "<group>"; };
+		F3967D6C15CEFC9700F9DD98 /* FileLevelRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileLevelRepository.m; sourceTree = "<group>"; };
+		F3967D6E15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldLevelSecurityStrategy.h; sourceTree = "<group>"; };
+		F3967D6F15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldLevelSecurityStrategy.m; sourceTree = "<group>"; };
+		F3967D7015CEFC9700F9DD98 /* FileLevelSecurityStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileLevelSecurityStrategy.h; sourceTree = "<group>"; };
+		F3967D7115CEFC9700F9DD98 /* FileLevelSecurityStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileLevelSecurityStrategy.m; sourceTree = "<group>"; };
+		F3967D7C15CEFCAB00F9DD98 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3967E0415CF00B900F9DD98 /* CoreRepositoryLibraryHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreRepositoryLibraryHeaders.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3967CB515CEF82000F9DD98 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3967D7D15CEFCAB00F9DD98 /* CoreData.framework in Frameworks */,
+				F3967CBC15CEF82000F9DD98 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3967CAD15CEF82000F9DD98 = {
+			isa = PBXGroup;
+			children = (
+				F3967CBD15CEF82000F9DD98 /* CoreRepositoryLibrary */,
+				F3967CBA15CEF82000F9DD98 /* Frameworks */,
+				F3967CB915CEF82000F9DD98 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3967CB915CEF82000F9DD98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3967CB815CEF82000F9DD98 /* libCoreRepositoryLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3967CBA15CEF82000F9DD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D7C15CEFCAB00F9DD98 /* CoreData.framework */,
+				F3967CBB15CEF82000F9DD98 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3967CBD15CEF82000F9DD98 /* CoreRepositoryLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D5515CEFC9700F9DD98 /* Source */,
+				F3967CBE15CEF82000F9DD98 /* Supporting Files */,
+			);
+			path = CoreRepositoryLibrary;
+			sourceTree = "<group>";
+		};
+		F3967CBE15CEF82000F9DD98 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3967CBF15CEF82000F9DD98 /* CoreRepositoryLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3967D5515CEFC9700F9DD98 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D5615CEFC9700F9DD98 /* Additions */,
+				F3967D5915CEFC9700F9DD98 /* Backingstores */,
+				F3967D5C15CEFC9700F9DD98 /* Core */,
+				F3967D5F15CEFC9700F9DD98 /* Encryption */,
+				F3967D6215CEFC9700F9DD98 /* Factories */,
+				F3967D6515CEFC9700F9DD98 /* Protocols */,
+				F3967D6815CEFC9700F9DD98 /* Repositories */,
+				F3967D6D15CEFC9700F9DD98 /* SecurityStategies */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F3967D5615CEFC9700F9DD98 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D5715CEFC9700F9DD98 /* NSData+Additions.h */,
+				F3967D5815CEFC9700F9DD98 /* NSData+Additions.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		F3967D5915CEFC9700F9DD98 /* Backingstores */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D5A15CEFC9700F9DD98 /* SQLiteBackingstore.h */,
+				F3967D5B15CEFC9700F9DD98 /* SQLiteBackingstore.m */,
+			);
+			path = Backingstores;
+			sourceTree = "<group>";
+		};
+		F3967D5C15CEFC9700F9DD98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D5D15CEFC9700F9DD98 /* Repository.h */,
+				F3967D5E15CEFC9700F9DD98 /* Repository.m */,
+				F3967E0415CF00B900F9DD98 /* CoreRepositoryLibraryHeaders.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F3967D5F15CEFC9700F9DD98 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D6015CEFC9700F9DD98 /* DataEncryption.h */,
+				F3967D6115CEFC9700F9DD98 /* DataEncryption.m */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		F3967D6215CEFC9700F9DD98 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D6315CEFC9700F9DD98 /* RepositoryFactory.h */,
+				F3967D6415CEFC9700F9DD98 /* RepositoryFactory.m */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		F3967D6515CEFC9700F9DD98 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D6615CEFC9700F9DD98 /* BackingstoreProtocol.h */,
+				F3967D6715CEFC9700F9DD98 /* RepositoryProtocols.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F3967D6815CEFC9700F9DD98 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D6915CEFC9700F9DD98 /* FieldLevelRepository.h */,
+				F3967D6A15CEFC9700F9DD98 /* FieldLevelRepository.m */,
+				F3967D6B15CEFC9700F9DD98 /* FileLevelRepository.h */,
+				F3967D6C15CEFC9700F9DD98 /* FileLevelRepository.m */,
+				F3655E1E15F263E60029CCC5 /* UnsecuredRepository.h */,
+				F3655E1F15F263E60029CCC5 /* UnsecuredRepository.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F3967D6D15CEFC9700F9DD98 /* SecurityStategies */ = {
+			isa = PBXGroup;
+			children = (
+				F3967D6E15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.h */,
+				F3967D6F15CEFC9700F9DD98 /* FieldLevelSecurityStrategy.m */,
+				F3967D7015CEFC9700F9DD98 /* FileLevelSecurityStrategy.h */,
+				F3967D7115CEFC9700F9DD98 /* FileLevelSecurityStrategy.m */,
+			);
+			path = SecurityStategies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3967CB715CEF82000F9DD98 /* CoreRepositoryLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3967CC615CEF82000F9DD98 /* Build configuration list for PBXNativeTarget "CoreRepositoryLibrary" */;
+			buildPhases = (
+				F3967CB415CEF82000F9DD98 /* Sources */,
+				F3967CB515CEF82000F9DD98 /* Frameworks */,
+				F3967CB615CEF82000F9DD98 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreRepositoryLibrary;
+			productName = CoreRepositoryLibrary;
+			productReference = F3967CB815CEF82000F9DD98 /* libCoreRepositoryLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3967CAF15CEF82000F9DD98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = VHH;
+			};
+			buildConfigurationList = F3967CB215CEF82000F9DD98 /* Build configuration list for PBXProject "CoreRepositoryLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3967CAD15CEF82000F9DD98;
+			productRefGroup = F3967CB915CEF82000F9DD98 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3967CB715CEF82000F9DD98 /* CoreRepositoryLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3967CB415CEF82000F9DD98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3967D7215CEFC9700F9DD98 /* NSData+Additions.m in Sources */,
+				F3967D7315CEFC9700F9DD98 /* SQLiteBackingstore.m in Sources */,
+				F3967D7415CEFC9700F9DD98 /* Repository.m in Sources */,
+				F3967D7515CEFC9700F9DD98 /* DataEncryption.m in Sources */,
+				F3967D7615CEFC9700F9DD98 /* RepositoryFactory.m in Sources */,
+				F3967D7715CEFC9700F9DD98 /* FieldLevelRepository.m in Sources */,
+				F3967D7815CEFC9700F9DD98 /* FileLevelRepository.m in Sources */,
+				F3967D7915CEFC9700F9DD98 /* FieldLevelSecurityStrategy.m in Sources */,
+				F3967D7A15CEFC9700F9DD98 /* FileLevelSecurityStrategy.m in Sources */,
+				F3655E2015F263E60029CCC5 /* UnsecuredRepository.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F3967CC415CEF82000F9DD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3967CC515CEF82000F9DD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3967CC715CEF82000F9DD98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CoreRepositoryLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreRepositoryLibrary/CoreRepositoryLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F3967CC815CEF82000F9DD98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/CoreRepositoryLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreRepositoryLibrary/CoreRepositoryLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3967CB215CEF82000F9DD98 /* Build configuration list for PBXProject "CoreRepositoryLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3967CC415CEF82000F9DD98 /* Debug */,
+				F3967CC515CEF82000F9DD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3967CC615CEF82000F9DD98 /* Build configuration list for PBXNativeTarget "CoreRepositoryLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3967CC715CEF82000F9DD98 /* Debug */,
+				F3967CC815CEF82000F9DD98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3967CAF15CEF82000F9DD98 /* Project object */;
+}

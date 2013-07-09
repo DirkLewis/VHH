@@ -1,0 +1,16 @@
+//Keys
+#define kSignalQualityPerscentKey @"SignalQualityPercent"
+#define kNetworkIdentifierSSIDKey @"SSID"
+#define kPingResponseTimeKey @"PingResponseTime"
+#define kPingExceededThresholdKey @"PingExceededThreshold"
+#define kUnresolvedPingKey @"UnresolvedPing"
+#define kPingkeyKey @"PingKey"
+#define kPingAverageKey @"PingAverage"
+#define kPingVarianceDataKey @"VarianceData"
+//User defaults
+#define kUserDefaultGraphScaleAdjustmentValueKey @"graphScaleAdjustmentValue"
+#define kUserDefaultPingCountKey  @"pingCount"
+#define kUserDefaultPingThresholdKey @"pingThreshold"
+#define kUserDefaultPingVarianceKey @"pingVariance"
+#define kUserDefaultRootServerKey @"RootServerAddress"
+#define kUserDefaultPingIntervalKey @"pingInterval"

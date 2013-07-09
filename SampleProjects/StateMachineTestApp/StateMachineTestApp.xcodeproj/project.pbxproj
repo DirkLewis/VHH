@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F31BE70B15BC68DA0097E1C8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31BE70A15BC68DA0097E1C8 /* SystemConfiguration.framework */; };
+		F31BE71F15BC726D0097E1C8 /* SSBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE70F15BC726D0097E1C8 /* SSBadgeView.m */; };
+		F31BE72015BC726D0097E1C8 /* SSDrawingUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71115BC726D0097E1C8 /* SSDrawingUtilities.m */; };
+		F31BE72115BC726D0097E1C8 /* SSHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71315BC726D0097E1C8 /* SSHUDView.m */; };
+		F31BE72215BC726D0097E1C8 /* SSHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71515BC726D0097E1C8 /* SSHUDWindow.m */; };
+		F31BE72315BC726D0097E1C8 /* SSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71715BC726D0097E1C8 /* SSLabel.m */; };
+		F31BE72415BC726D0097E1C8 /* SSPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71915BC726D0097E1C8 /* SSPieProgressView.m */; };
+		F31BE72515BC726D0097E1C8 /* SSToolkit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F31BE71A15BC726D0097E1C8 /* SSToolkit.bundle */; };
+		F31BE72615BC726D0097E1C8 /* UIImage+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71C15BC726D0097E1C8 /* UIImage+SSToolkitAdditions.m */; };
+		F31BE72715BC726D0097E1C8 /* UIView+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE71E15BC726D0097E1C8 /* UIView+SSToolkitAdditions.m */; };
+		F31BE72C15BC72C30097E1C8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE72B15BC72C30097E1C8 /* BaseViewController.m */; };
+		F31BE72F15BC72F20097E1C8 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F31BE72E15BC72F20097E1C8 /* BaseTableViewController.m */; };
+		F37CA23815BB754A00FFA7F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37CA23715BB754A00FFA7F1 /* UIKit.framework */; };
+		F37CA23A15BB754A00FFA7F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37CA23915BB754A00FFA7F1 /* Foundation.framework */; };
+		F37CA23C15BB754A00FFA7F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37CA23B15BB754A00FFA7F1 /* CoreGraphics.framework */; };
+		F37CA24215BB754A00FFA7F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F37CA24015BB754A00FFA7F1 /* InfoPlist.strings */; };
+		F37CA24415BB754A00FFA7F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F37CA24315BB754A00FFA7F1 /* main.m */; };
+		F37CA24815BB754A00FFA7F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F37CA24715BB754A00FFA7F1 /* AppDelegate.m */; };
+		F37CA24B15BB754A00FFA7F1 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37CA24915BB754A00FFA7F1 /* MainStoryboard_iPhone.storyboard */; };
+		F37CA24E15BB754A00FFA7F1 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37CA24C15BB754A00FFA7F1 /* MainStoryboard_iPad.storyboard */; };
+		F37CA25115BB754A00FFA7F1 /* StateMachineTestAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F37CA25015BB754A00FFA7F1 /* StateMachineTestAppVC.m */; };
+		F37CA27815BB75EA00FFA7F1 /* libStateMachineLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F37CA27715BB75EA00FFA7F1 /* libStateMachineLibrary.a */; };
+		F37CA27C15BB763F00FFA7F1 /* SimpleStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F37CA27B15BB763F00FFA7F1 /* SimpleStateMachine.m */; };
+		F3F9F3EE15BC64AC00DC4148 /* ReachabilityStateMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9F3ED15BC64AC00DC4148 /* ReachabilityStateMachine.m */; };
+		F3F9F3F215BC656400DC4148 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9F3F115BC656400DC4148 /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F31BE70A15BC68DA0097E1C8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F31BE70E15BC726D0097E1C8 /* SSBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSBadgeView.h; sourceTree = "<group>"; };
+		F31BE70F15BC726D0097E1C8 /* SSBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSBadgeView.m; sourceTree = "<group>"; };
+		F31BE71015BC726D0097E1C8 /* SSDrawingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDrawingUtilities.h; sourceTree = "<group>"; };
+		F31BE71115BC726D0097E1C8 /* SSDrawingUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDrawingUtilities.m; sourceTree = "<group>"; };
+		F31BE71215BC726D0097E1C8 /* SSHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHUDView.h; sourceTree = "<group>"; };
+		F31BE71315BC726D0097E1C8 /* SSHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHUDView.m; sourceTree = "<group>"; };
+		F31BE71415BC726D0097E1C8 /* SSHUDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSHUDWindow.h; sourceTree = "<group>"; };
+		F31BE71515BC726D0097E1C8 /* SSHUDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSHUDWindow.m; sourceTree = "<group>"; };
+		F31BE71615BC726D0097E1C8 /* SSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLabel.h; sourceTree = "<group>"; };
+		F31BE71715BC726D0097E1C8 /* SSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLabel.m; sourceTree = "<group>"; };
+		F31BE71815BC726D0097E1C8 /* SSPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSPieProgressView.h; sourceTree = "<group>"; };
+		F31BE71915BC726D0097E1C8 /* SSPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSPieProgressView.m; sourceTree = "<group>"; };
+		F31BE71A15BC726D0097E1C8 /* SSToolkit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SSToolkit.bundle; sourceTree = "<group>"; };
+		F31BE71B15BC726D0097E1C8 /* UIImage+SSToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SSToolkitAdditions.h"; sourceTree = "<group>"; };
+		F31BE71C15BC726D0097E1C8 /* UIImage+SSToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SSToolkitAdditions.m"; sourceTree = "<group>"; };
+		F31BE71D15BC726D0097E1C8 /* UIView+SSToolkitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SSToolkitAdditions.h"; sourceTree = "<group>"; };
+		F31BE71E15BC726D0097E1C8 /* UIView+SSToolkitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SSToolkitAdditions.m"; sourceTree = "<group>"; };
+		F31BE72A15BC72C30097E1C8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F31BE72B15BC72C30097E1C8 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F31BE72D15BC72F20097E1C8 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		F31BE72E15BC72F20097E1C8 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		F31BE73015BC73380097E1C8 /* ProgressIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressIndicatorProtocol.h; sourceTree = "<group>"; };
+		F37CA23315BB754A00FFA7F1 /* StateMachineTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateMachineTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37CA23715BB754A00FFA7F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F37CA23915BB754A00FFA7F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F37CA23B15BB754A00FFA7F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F37CA23F15BB754A00FFA7F1 /* StateMachineTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StateMachineTestApp-Info.plist"; sourceTree = "<group>"; };
+		F37CA24115BB754A00FFA7F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F37CA24315BB754A00FFA7F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F37CA24515BB754A00FFA7F1 /* StateMachineTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StateMachineTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		F37CA24615BB754A00FFA7F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F37CA24715BB754A00FFA7F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F37CA24A15BB754A00FFA7F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F37CA24D15BB754A00FFA7F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F37CA24F15BB754A00FFA7F1 /* StateMachineTestAppVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateMachineTestAppVC.h; sourceTree = "<group>"; };
+		F37CA25015BB754A00FFA7F1 /* StateMachineTestAppVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateMachineTestAppVC.m; sourceTree = "<group>"; };
+		F37CA27715BB75EA00FFA7F1 /* libStateMachineLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStateMachineLibrary.a; path = "../StateMachineLibrary/build/Release-iphoneos/libStateMachineLibrary.a"; sourceTree = "<group>"; };
+		F37CA27A15BB763F00FFA7F1 /* SimpleStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleStateMachine.h; sourceTree = "<group>"; };
+		F37CA27B15BB763F00FFA7F1 /* SimpleStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStateMachine.m; sourceTree = "<group>"; };
+		F3F9F3EC15BC64AC00DC4148 /* ReachabilityStateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityStateMachine.h; sourceTree = "<group>"; };
+		F3F9F3ED15BC64AC00DC4148 /* ReachabilityStateMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityStateMachine.m; sourceTree = "<group>"; };
+		F3F9F3F015BC656400DC4148 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F3F9F3F115BC656400DC4148 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F37CA23015BB754A00FFA7F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31BE70B15BC68DA0097E1C8 /* SystemConfiguration.framework in Frameworks */,
+				F37CA27815BB75EA00FFA7F1 /* libStateMachineLibrary.a in Frameworks */,
+				F37CA23815BB754A00FFA7F1 /* UIKit.framework in Frameworks */,
+				F37CA23A15BB754A00FFA7F1 /* Foundation.framework in Frameworks */,
+				F37CA23C15BB754A00FFA7F1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F31BE70D15BC726D0097E1C8 /* SSToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				F31BE70E15BC726D0097E1C8 /* SSBadgeView.h */,
+				F31BE70F15BC726D0097E1C8 /* SSBadgeView.m */,
+				F31BE71015BC726D0097E1C8 /* SSDrawingUtilities.h */,
+				F31BE71115BC726D0097E1C8 /* SSDrawingUtilities.m */,
+				F31BE71215BC726D0097E1C8 /* SSHUDView.h */,
+				F31BE71315BC726D0097E1C8 /* SSHUDView.m */,
+				F31BE71415BC726D0097E1C8 /* SSHUDWindow.h */,
+				F31BE71515BC726D0097E1C8 /* SSHUDWindow.m */,
+				F31BE71615BC726D0097E1C8 /* SSLabel.h */,
+				F31BE71715BC726D0097E1C8 /* SSLabel.m */,
+				F31BE71815BC726D0097E1C8 /* SSPieProgressView.h */,
+				F31BE71915BC726D0097E1C8 /* SSPieProgressView.m */,
+				F31BE71A15BC726D0097E1C8 /* SSToolkit.bundle */,
+				F31BE71B15BC726D0097E1C8 /* UIImage+SSToolkitAdditions.h */,
+				F31BE71C15BC726D0097E1C8 /* UIImage+SSToolkitAdditions.m */,
+				F31BE71D15BC726D0097E1C8 /* UIView+SSToolkitAdditions.h */,
+				F31BE71E15BC726D0097E1C8 /* UIView+SSToolkitAdditions.m */,
+			);
+			path = SSToolkit;
+			sourceTree = "<group>";
+		};
+		F31BE72815BC72730097E1C8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F31BE70D15BC726D0097E1C8 /* SSToolkit */,
+				F3F9F3EF15BC656300DC4148 /* Reachability */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F31BE72915BC728C0097E1C8 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				F31BE72A15BC72C30097E1C8 /* BaseViewController.h */,
+				F31BE72B15BC72C30097E1C8 /* BaseViewController.m */,
+				F31BE72D15BC72F20097E1C8 /* BaseTableViewController.h */,
+				F31BE72E15BC72F20097E1C8 /* BaseTableViewController.m */,
+				F31BE73015BC73380097E1C8 /* ProgressIndicatorProtocol.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		F37CA22815BB754A00FFA7F1 = {
+			isa = PBXGroup;
+			children = (
+				F37CA23D15BB754A00FFA7F1 /* StateMachineTestApp */,
+				F37CA23615BB754A00FFA7F1 /* Frameworks */,
+				F37CA23415BB754A00FFA7F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F37CA23415BB754A00FFA7F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA23315BB754A00FFA7F1 /* StateMachineTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F37CA23615BB754A00FFA7F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA27715BB75EA00FFA7F1 /* libStateMachineLibrary.a */,
+				F31BE70A15BC68DA0097E1C8 /* SystemConfiguration.framework */,
+				F37CA23715BB754A00FFA7F1 /* UIKit.framework */,
+				F37CA23915BB754A00FFA7F1 /* Foundation.framework */,
+				F37CA23B15BB754A00FFA7F1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F37CA23D15BB754A00FFA7F1 /* StateMachineTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				F31BE72915BC728C0097E1C8 /* Abstract */,
+				F31BE72815BC72730097E1C8 /* Utilities */,
+				F37CA27915BB760E00FFA7F1 /* StateMachines */,
+				F37CA27115BB756E00FFA7F1 /* ViewControllers */,
+				F37CA27015BB756600FFA7F1 /* Storyboards */,
+				F37CA26F15BB755C00FFA7F1 /* Application */,
+				F37CA23E15BB754A00FFA7F1 /* Supporting Files */,
+			);
+			path = StateMachineTestApp;
+			sourceTree = "<group>";
+		};
+		F37CA23E15BB754A00FFA7F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA23F15BB754A00FFA7F1 /* StateMachineTestApp-Info.plist */,
+				F37CA24015BB754A00FFA7F1 /* InfoPlist.strings */,
+				F37CA24315BB754A00FFA7F1 /* main.m */,
+				F37CA24515BB754A00FFA7F1 /* StateMachineTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F37CA26F15BB755C00FFA7F1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA24615BB754A00FFA7F1 /* AppDelegate.h */,
+				F37CA24715BB754A00FFA7F1 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		F37CA27015BB756600FFA7F1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA24915BB754A00FFA7F1 /* MainStoryboard_iPhone.storyboard */,
+				F37CA24C15BB754A00FFA7F1 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		F37CA27115BB756E00FFA7F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA24F15BB754A00FFA7F1 /* StateMachineTestAppVC.h */,
+				F37CA25015BB754A00FFA7F1 /* StateMachineTestAppVC.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F37CA27915BB760E00FFA7F1 /* StateMachines */ = {
+			isa = PBXGroup;
+			children = (
+				F37CA27A15BB763F00FFA7F1 /* SimpleStateMachine.h */,
+				F37CA27B15BB763F00FFA7F1 /* SimpleStateMachine.m */,
+				F3F9F3EC15BC64AC00DC4148 /* ReachabilityStateMachine.h */,
+				F3F9F3ED15BC64AC00DC4148 /* ReachabilityStateMachine.m */,
+			);
+			name = StateMachines;
+			sourceTree = "<group>";
+		};
+		F3F9F3EF15BC656300DC4148 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9F3F015BC656400DC4148 /* Reachability.h */,
+				F3F9F3F115BC656400DC4148 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F37CA23215BB754A00FFA7F1 /* StateMachineTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F37CA26915BB754A00FFA7F1 /* Build configuration list for PBXNativeTarget "StateMachineTestApp" */;
+			buildPhases = (
+				F37CA22F15BB754A00FFA7F1 /* Sources */,
+				F37CA23015BB754A00FFA7F1 /* Frameworks */,
+				F37CA23115BB754A00FFA7F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StateMachineTestApp;
+			productName = StateMachineTestApp;
+			productReference = F37CA23315BB754A00FFA7F1 /* StateMachineTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F37CA22A15BB754A00FFA7F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = VideoHooHaa;
+			};
+			buildConfigurationList = F37CA22D15BB754A00FFA7F1 /* Build configuration list for PBXProject "StateMachineTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F37CA22815BB754A00FFA7F1;
+			productRefGroup = F37CA23415BB754A00FFA7F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F37CA23215BB754A00FFA7F1 /* StateMachineTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F37CA23115BB754A00FFA7F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37CA24215BB754A00FFA7F1 /* InfoPlist.strings in Resources */,
+				F37CA24B15BB754A00FFA7F1 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F37CA24E15BB754A00FFA7F1 /* MainStoryboard_iPad.storyboard in Resources */,
+				F31BE72515BC726D0097E1C8 /* SSToolkit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F37CA22F15BB754A00FFA7F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F37CA24415BB754A00FFA7F1 /* main.m in Sources */,
+				F37CA24815BB754A00FFA7F1 /* AppDelegate.m in Sources */,
+				F37CA25115BB754A00FFA7F1 /* StateMachineTestAppVC.m in Sources */,
+				F37CA27C15BB763F00FFA7F1 /* SimpleStateMachine.m in Sources */,
+				F3F9F3EE15BC64AC00DC4148 /* ReachabilityStateMachine.m in Sources */,
+				F3F9F3F215BC656400DC4148 /* Reachability.m in Sources */,
+				F31BE71F15BC726D0097E1C8 /* SSBadgeView.m in Sources */,
+				F31BE72015BC726D0097E1C8 /* SSDrawingUtilities.m in Sources */,
+				F31BE72115BC726D0097E1C8 /* SSHUDView.m in Sources */,
+				F31BE72215BC726D0097E1C8 /* SSHUDWindow.m in Sources */,
+				F31BE72315BC726D0097E1C8 /* SSLabel.m in Sources */,
+				F31BE72415BC726D0097E1C8 /* SSPieProgressView.m in Sources */,
+				F31BE72615BC726D0097E1C8 /* UIImage+SSToolkitAdditions.m in Sources */,
+				F31BE72715BC726D0097E1C8 /* UIView+SSToolkitAdditions.m in Sources */,
+				F31BE72C15BC72C30097E1C8 /* BaseViewController.m in Sources */,
+				F31BE72F15BC72F20097E1C8 /* BaseTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F37CA24015BB754A00FFA7F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37CA24115BB754A00FFA7F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F37CA24915BB754A00FFA7F1 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37CA24A15BB754A00FFA7F1 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F37CA24C15BB754A00FFA7F1 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F37CA24D15BB754A00FFA7F1 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F37CA26715BB754A00FFA7F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F37CA26815BB754A00FFA7F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F37CA26A15BB754A00FFA7F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StateMachineTestApp/StateMachineTestApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "StateMachineTestApp/StateMachineTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F37CA26B15BB754A00FFA7F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StateMachineTestApp/StateMachineTestApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "StateMachineTestApp/StateMachineTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F37CA22D15BB754A00FFA7F1 /* Build configuration list for PBXProject "StateMachineTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37CA26715BB754A00FFA7F1 /* Debug */,
+				F37CA26815BB754A00FFA7F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F37CA26915BB754A00FFA7F1 /* Build configuration list for PBXNativeTarget "StateMachineTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F37CA26A15BB754A00FFA7F1 /* Debug */,
+				F37CA26B15BB754A00FFA7F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F37CA22A15BB754A00FFA7F1 /* Project object */;
+}

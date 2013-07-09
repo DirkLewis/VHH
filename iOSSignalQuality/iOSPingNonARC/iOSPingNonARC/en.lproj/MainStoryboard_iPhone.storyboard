@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Signal Quality View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="SignalQualityViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="b1z-L7-RWk">
+                                <rect key="frame" x="18" y="26" width="280" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="signalqualitytextBG.png" id="90P-Bu-fEb">
+                                <rect key="frame" x="18" y="281" width="280" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="NETWORK DATA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LBa-ii-rJU">
+                                <rect key="frame" x="18" y="340" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="neU-My-W1d" customClass="GradientButton">
+                                <rect key="frame" x="182" y="229" width="116" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="RUN TEST">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchRunTestButton:" destination="2" eventType="touchUpInside" id="1KG-v6-8xj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AVG: 0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pm9-Lh-hKO">
+                                <rect key="frame" x="40" y="294" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MIN: 0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="NK7-wc-Pff">
+                                <rect key="frame" x="126" y="294" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MAX: 0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qzA-Hd-srt">
+                                <rect key="frame" x="204" y="294" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Network Graph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DKr-J0-5b2">
+                                <rect key="frame" x="18" y="2" width="116" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Scale: x100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nTT-mL-fo8">
+                                <rect key="frame" x="209" y="0.0" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QxA-Bs-7zm" customClass="GradientButton">
+                                <rect key="frame" x="20" y="229" width="131" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select Host">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchSelectHost:" destination="2" eventType="touchUpInside" id="riw-b3-HPj"/>
+                                </connections>
+                            </button>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" autorepeat="NO" value="1" minimumValue="1" maximumValue="100" id="YfQ-Je-ggK">
+                                <rect key="frame" x="20" y="371" width="94" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="touchPVStepper:" destination="2" eventType="valueChanged" id="ATA-w1-VDj"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" autorepeat="NO" value="1" minimumValue="1" maximumValue="100" id="u0r-PE-a00">
+                                <rect key="frame" x="18" y="413" width="94" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="touchPTStepper:" destination="2" eventType="valueChanged" id="NFZ-dz-NnS"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ping Variance:000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="09H-8b-Keb">
+                                <rect key="frame" x="142" y="374" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ping Threshold:000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fgs-wy-hG1">
+                                <rect key="frame" x="142" y="416" width="156" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="averagePingLabel" destination="pm9-Lh-hKO" id="XXY-YM-hPa"/>
+                        <outlet property="graphScaleLabel" destination="nTT-mL-fo8" id="cTi-Hn-ypi"/>
+                        <outlet property="hostSelectionButton" destination="QxA-Bs-7zm" id="jko-Eg-CPB"/>
+                        <outlet property="maximumPingLabel" destination="qzA-Hd-srt" id="W8O-li-4fI"/>
+                        <outlet property="minimumPingLabel" destination="NK7-wc-Pff" id="TlR-2e-ihk"/>
+                        <outlet property="networkGraphView" destination="b1z-L7-RWk" id="DyE-8J-Rx4"/>
+                        <outlet property="pingThresholdLabel" destination="fgs-wy-hG1" id="jlK-jN-luX"/>
+                        <outlet property="pingThresholdStepper" destination="u0r-PE-a00" id="hTR-It-GPy"/>
+                        <outlet property="pingVarianceLabel" destination="09H-8b-Keb" id="eZT-Ed-o6I"/>
+                        <outlet property="pingVarianceStepper" destination="YfQ-Je-ggK" id="qBp-qr-hqa"/>
+                        <outlet property="runTestButton" destination="neU-My-W1d" id="RFZ-fL-syZ"/>
+                        <outlet property="signalQualityBackgroundImageView" destination="90P-Bu-fEb" id="yDV-IJ-Cwa"/>
+                        <outlet property="signalQualityTitleLabel" destination="LBa-ii-rJU" id="SZf-j8-AGC"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-354" y="186"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="signalqualitytextBG.png" width="280" height="100"/>
+    </resources>
+    <classes>
+        <class className="GradientButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GradientButton.h"/>
+        </class>
+        <class className="SignalQualityViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SignalQualityViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="slideGraphScaleAdjustment:"/>
+                <relationship kind="action" name="touchPTStepper:"/>
+                <relationship kind="action" name="touchPVStepper:"/>
+                <relationship kind="action" name="touchRunTestButton:"/>
+                <relationship kind="action" name="touchSelectHost:"/>
+                <relationship kind="outlet" name="averagePingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="graphScaleAdjustmentSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="graphScaleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="hostSelectionButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="maximumPingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="minimumPingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="networkGraphView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="pingThresholdLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pingThresholdStepper" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="pingVarianceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pingVarianceStepper" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="runTestButton" candidateClass="GradientButton"/>
+                <relationship kind="outlet" name="signalQualityBackgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="signalQualityTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

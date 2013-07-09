@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Dhirkin' target in the 'Dhirkin' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
